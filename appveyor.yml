@@ -6,6 +6,7 @@ environment:
     - PYTHON: "C:\\Python36"
 install:
   - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+  - pip install vcrpy
   - pip install pytest
   - pip install pyyaml
   - pip install pbr
