@@ -34,3 +34,11 @@ def test_news_release():
 
     assert isinstance(p1, dict)
     assert isinstance(p2, dict)
+
+
+def test_image_collections():
+    pass
+
+
+def test_images():
+    pass

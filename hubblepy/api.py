@@ -47,6 +47,64 @@ def news_release(which=None, return_type='json'):
     return res
 
 
+def image_collections(page=None, collection_name=None, return_type='json'):
+    endpoint = urljoin(api_url, 'images/')
+
+    if page is None or not isinstance(page, (list, tuple)):
+        r = requests.get(urljoin(endpoint, collection_name))
+        res = _return_types(r, return_type)
+
+    else:
+        if page == 'all':
+            r = requests.get(urljoin(endpoint, collection_name), params={'page': page})
+            res = _return_types(r, return_type)
+        else:
+            res = []
+
+            for i in page:
+                r = requests.get(urljoin(endpoint, collection_name), params={'page': i})
+                r = _return_types(r, return_type)
+
+                res.append(r)
+
+    return res
+
+
+def images(image_id, return_type='json'):
+    endpoint = urljoin(api_url, 'image/')
+
+    if not isinstance(image_id, (list, tuple)):
+        r = requests.get(urljoin(endpoint, str(image_id)))
+        res = _return_types(r, return_type)
+
+    else:
+        res = []
+
+        for i in image_id:
+            r = requests.get(urljoin(endpoint, str(i)))
+            r = _return_types(r, return_type)
+
+            res.append(r)
+
+    return res
+
+
+def videos():
+    pass
+
+
+def glossary():
+    pass
+
+
+def rss():
+    pass
+
+
+def rss_posts():
+    pass
+
+
 def _return_types(r, return_type):
     if return_type == 'json':
         r = r.json()
