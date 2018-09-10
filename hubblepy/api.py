@@ -89,20 +89,131 @@ def images(image_id, return_type='json'):
     return res
 
 
-def videos():
-    pass
+def video_collections(page=None, collection_name=None, return_type='json'):
+    endpoint = urljoin(api_url, 'videos/')
+
+    if page is None:
+        r = requests.get(urljoin(endpoint, collection_name))
+        res = _return_types(r, return_type)
+
+    else:
+        if page == 'all' or isinstance(page, (str, int)):
+            r = requests.get(urljoin(endpoint, collection_name), params={'page': page})
+            res = _return_types(r, return_type)
+        else:
+            res = []
+
+            for i in page:
+                r = requests.get(urljoin(endpoint, collection_name), params={'page': i})
+                r = _return_types(r, return_type)
+
+                res.append(r)
+
+    return res
 
 
-def glossary():
-    pass
+def videos(video_id, return_type='json'):
+    endpoint = urljoin(api_url, 'video/')
+
+    if not isinstance(video_id, (list, tuple)):
+        r = requests.get(urljoin(endpoint, video_id))
+        res = _return_types(r, return_type)
+
+    else:
+        res = []
+
+        for i in video_id:
+            r = requests.get(urljoin(endpoint, i))
+            r = _return_types(r, return_type)
+
+            res.append(r)
+
+    return res
 
 
-def rss():
-    pass
+def glossary(page=None, return_type='json'):
+    endpoint = urljoin(api_url, 'glossary')
+
+    if not isinstance(page, (list, tuple)):
+        r = requests.get(endpoint, params={'page': page})
+        res = _return_types(r, return_type)
+
+    else:
+        res = []
+
+        for i in page:
+            r = requests.get(endpoint, params={'page': i})
+            r = _return_types(r, return_type)
+
+            res.append(r)
+
+    return res
 
 
-def rss_posts():
-    pass
+def glossary_term(term, return_type='json'):
+    endpoint = urljoin(api_url, 'glossary/')
+
+    if not isinstance(term, (list, tuple)):
+        r = requests.get(urljoin(endpoint, term))
+        res = _return_types(r, return_type)
+
+    else:
+        res = []
+
+        for i in term:
+            r = requests.get(urljoin(endpoint, i))
+            r = _return_types(r, return_type)
+
+            res.append(r)
+
+    return res
+
+
+def rss(feed_name, page=None, sort='desc', return_type='json'):
+    endpoint = urljoin(api_url, 'external_feed/')
+
+    if sort == 'desc':
+        sort = '-pub_date'
+    else:
+        sort = 'pub_date'
+
+    if not isinstance(page, (list, tuple)):
+        r = requests.get(urljoin(endpoint, feed_name), params={'page': page,
+                                                               'sort': sort})
+        print(r.url)
+        res = _return_types(r, return_type)
+
+    else:
+        res = []
+
+        for i in page:
+            r = requests.get(urljoin(endpoint, feed_name), params={'page': i,
+                                                                   'sort': sort})
+            print(r.url)
+            res = _return_types(r, return_type)
+
+            res.append(r)
+
+    return res
+
+
+def rss_posts(feed_name, pub_date, return_type='json'):
+    endpoint = urljoin(api_url, 'external_feed/')
+
+    if not isinstance(pub_date, (list, tuple)):
+        r = requests.get(urljoin(endpoint, feed_name) + '/' + pub_date)
+        res = _return_types(r, return_type)
+
+    else:
+        res = []
+
+        for i in pub_date:
+            r = requests.get(urljoin(endpoint, feed_name) + '/' + i)
+            r = _return_types(r, return_type)
+
+            res.append(r)
+
+    return res
 
 
 def _return_types(r, return_type):
