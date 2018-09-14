@@ -9,8 +9,9 @@ interactions:
     method: GET
     uri: http://hubblesite.org/api/v3/news?page=1
   response:
-    body: {string: "[{\"news_id\":\"2018-31\",\"name\":\"Success in Critical Communications
-        Tests for NASA's James Webb Space Telescope\",\"url\":\"http://webbtelescope.org/articles/2018-31\"},{\"news_id\":\"2018-41\",\"name\":\"Retiring
+    body: {string: "[{\"news_id\":\"2018-39\",\"name\":\"Hubble Goes Wide to Seek
+        Out Far-Flung Galaxies\",\"url\":\"http://hubblesite.org/news_release/news/2018-39\"},{\"news_id\":\"2018-31\",\"name\":\"Success
+        in Critical Communications Tests for NASA's James Webb Space Telescope\",\"url\":\"http://webbtelescope.org/articles/2018-31\"},{\"news_id\":\"2018-41\",\"name\":\"Retiring
         Hubble Visualization Expert Blended the Best of Science and Art\",\"url\":\"http://hubblesite.org/news_release/news/2018-41\"},{\"news_id\":\"2018-35\",\"name\":\"Hubble
         Paints Picture of the Evolving Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-35\"},{\"news_id\":\"2018-33\",\"name\":\"Astronomers
         Uncover New Clues to the Star that Wouldn't Die\",\"url\":\"http://hubblesite.org/news_release/news/2018-33\"},{\"news_id\":\"2018-29\",\"name\":\"Saturn
@@ -35,15 +36,14 @@ interactions:
         Webb Telescope to Make a Splash in the Search for Interstellar Water\",\"url\":\"http://webbtelescope.org/articles/2018-14\"},{\"news_id\":\"2018-11\",\"name\":\"Hubble
         Finds Huge System of Dusty Material Enveloping the Young Star HR 4796A\",\"url\":\"http://hubblesite.org/news_release/news/2018-11\"},{\"news_id\":\"2018-09\",\"name\":\"NASA
         Finds a Large Amount of Water in an Exoplanet's Atmosphere\",\"url\":\"http://hubblesite.org/news_release/news/2018-09\"},{\"news_id\":\"2018-12\",\"name\":\"Improved
-        Hubble Yardstick Gives Fresh Evidence for New Physics in the Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-12\"},{\"news_id\":\"2018-10\",\"name\":\"NASA's
-        James Webb Space Telescope to Reveal Secrets of the Red Planet\",\"url\":\"http://webbtelescope.org/articles/2018-10\"}]"}
+        Hubble Yardstick Gives Fresh Evidence for New Physics in the Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-12\"}]"}
     headers:
       Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
       Connection: [Keep-Alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 07 Sep 2018 14:59:50 GMT']
-      ETag: [W/"ff1b4675928cb4250384205f7aa25d4f"]
-      Expires: ['Sat, 07 Sep 2019 14:59:50 GMT']
+      Date: ['Fri, 14 Sep 2018 13:12:14 GMT']
+      ETag: [W/"134e9851410e93e768cf03e9c976e18a"]
+      Expires: ['Sat, 14 Sep 2019 13:12:14 GMT']
       Keep-Alive: ['timeout=5, max=1000']
       STSCI-ML-Item-Count: ['25']
       STSCI-ML-Page: ['1']
@@ -51,8 +51,8 @@ interactions:
       Status: [200 OK]
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [d87f7476-e1dd-43da-bd55-9c5b87044e19]
-      X-Runtime: ['0.031214']
+      X-Request-Id: [81cf3535-077c-40c7-a296-384c9ec451bd]
+      X-Runtime: ['0.030533']
       X-XSS-Protection: [1; mode=block]
       X-total-count: ['25']
     status: {code: 200, message: OK}
@@ -66,8 +66,9 @@ interactions:
     method: GET
     uri: http://hubblesite.org/api/v3/news?page=1
   response:
-    body: {string: "[{\"news_id\":\"2018-31\",\"name\":\"Success in Critical Communications
-        Tests for NASA's James Webb Space Telescope\",\"url\":\"http://webbtelescope.org/articles/2018-31\"},{\"news_id\":\"2018-41\",\"name\":\"Retiring
+    body: {string: "[{\"news_id\":\"2018-39\",\"name\":\"Hubble Goes Wide to Seek
+        Out Far-Flung Galaxies\",\"url\":\"http://hubblesite.org/news_release/news/2018-39\"},{\"news_id\":\"2018-31\",\"name\":\"Success
+        in Critical Communications Tests for NASA's James Webb Space Telescope\",\"url\":\"http://webbtelescope.org/articles/2018-31\"},{\"news_id\":\"2018-41\",\"name\":\"Retiring
         Hubble Visualization Expert Blended the Best of Science and Art\",\"url\":\"http://hubblesite.org/news_release/news/2018-41\"},{\"news_id\":\"2018-35\",\"name\":\"Hubble
         Paints Picture of the Evolving Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-35\"},{\"news_id\":\"2018-33\",\"name\":\"Astronomers
         Uncover New Clues to the Star that Wouldn't Die\",\"url\":\"http://hubblesite.org/news_release/news/2018-33\"},{\"news_id\":\"2018-29\",\"name\":\"Saturn
@@ -92,15 +93,14 @@ interactions:
         Webb Telescope to Make a Splash in the Search for Interstellar Water\",\"url\":\"http://webbtelescope.org/articles/2018-14\"},{\"news_id\":\"2018-11\",\"name\":\"Hubble
         Finds Huge System of Dusty Material Enveloping the Young Star HR 4796A\",\"url\":\"http://hubblesite.org/news_release/news/2018-11\"},{\"news_id\":\"2018-09\",\"name\":\"NASA
         Finds a Large Amount of Water in an Exoplanet's Atmosphere\",\"url\":\"http://hubblesite.org/news_release/news/2018-09\"},{\"news_id\":\"2018-12\",\"name\":\"Improved
-        Hubble Yardstick Gives Fresh Evidence for New Physics in the Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-12\"},{\"news_id\":\"2018-10\",\"name\":\"NASA's
-        James Webb Space Telescope to Reveal Secrets of the Red Planet\",\"url\":\"http://webbtelescope.org/articles/2018-10\"}]"}
+        Hubble Yardstick Gives Fresh Evidence for New Physics in the Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-12\"}]"}
     headers:
       Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
       Connection: [Keep-Alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 07 Sep 2018 14:59:51 GMT']
-      ETag: [W/"ff1b4675928cb4250384205f7aa25d4f"]
-      Expires: ['Sat, 07 Sep 2019 14:59:51 GMT']
+      Date: ['Fri, 14 Sep 2018 13:12:14 GMT']
+      ETag: [W/"134e9851410e93e768cf03e9c976e18a"]
+      Expires: ['Sat, 14 Sep 2019 13:12:14 GMT']
       Keep-Alive: ['timeout=5, max=1000']
       STSCI-ML-Item-Count: ['25']
       STSCI-ML-Page: ['1']
@@ -108,8 +108,8 @@ interactions:
       Status: [200 OK]
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [4528fae9-7cdb-43d5-b30c-319729f4d8f7]
-      X-Runtime: ['0.004545']
+      X-Request-Id: [64536aff-7844-41d1-977b-5a47f01eebc5]
+      X-Runtime: ['0.005608']
       X-XSS-Protection: [1; mode=block]
       X-total-count: ['25']
     status: {code: 200, message: OK}
@@ -123,8 +123,9 @@ interactions:
     method: GET
     uri: http://hubblesite.org/api/v3/news?page=1
   response:
-    body: {string: "[{\"news_id\":\"2018-31\",\"name\":\"Success in Critical Communications
-        Tests for NASA's James Webb Space Telescope\",\"url\":\"http://webbtelescope.org/articles/2018-31\"},{\"news_id\":\"2018-41\",\"name\":\"Retiring
+    body: {string: "[{\"news_id\":\"2018-39\",\"name\":\"Hubble Goes Wide to Seek
+        Out Far-Flung Galaxies\",\"url\":\"http://hubblesite.org/news_release/news/2018-39\"},{\"news_id\":\"2018-31\",\"name\":\"Success
+        in Critical Communications Tests for NASA's James Webb Space Telescope\",\"url\":\"http://webbtelescope.org/articles/2018-31\"},{\"news_id\":\"2018-41\",\"name\":\"Retiring
         Hubble Visualization Expert Blended the Best of Science and Art\",\"url\":\"http://hubblesite.org/news_release/news/2018-41\"},{\"news_id\":\"2018-35\",\"name\":\"Hubble
         Paints Picture of the Evolving Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-35\"},{\"news_id\":\"2018-33\",\"name\":\"Astronomers
         Uncover New Clues to the Star that Wouldn't Die\",\"url\":\"http://hubblesite.org/news_release/news/2018-33\"},{\"news_id\":\"2018-29\",\"name\":\"Saturn
@@ -149,15 +150,14 @@ interactions:
         Webb Telescope to Make a Splash in the Search for Interstellar Water\",\"url\":\"http://webbtelescope.org/articles/2018-14\"},{\"news_id\":\"2018-11\",\"name\":\"Hubble
         Finds Huge System of Dusty Material Enveloping the Young Star HR 4796A\",\"url\":\"http://hubblesite.org/news_release/news/2018-11\"},{\"news_id\":\"2018-09\",\"name\":\"NASA
         Finds a Large Amount of Water in an Exoplanet's Atmosphere\",\"url\":\"http://hubblesite.org/news_release/news/2018-09\"},{\"news_id\":\"2018-12\",\"name\":\"Improved
-        Hubble Yardstick Gives Fresh Evidence for New Physics in the Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-12\"},{\"news_id\":\"2018-10\",\"name\":\"NASA's
-        James Webb Space Telescope to Reveal Secrets of the Red Planet\",\"url\":\"http://webbtelescope.org/articles/2018-10\"}]"}
+        Hubble Yardstick Gives Fresh Evidence for New Physics in the Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-12\"}]"}
     headers:
       Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
       Connection: [Keep-Alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 07 Sep 2018 14:59:51 GMT']
-      ETag: [W/"ff1b4675928cb4250384205f7aa25d4f"]
-      Expires: ['Sat, 07 Sep 2019 14:59:51 GMT']
+      Date: ['Fri, 14 Sep 2018 13:12:15 GMT']
+      ETag: [W/"134e9851410e93e768cf03e9c976e18a"]
+      Expires: ['Sat, 14 Sep 2019 13:12:15 GMT']
       Keep-Alive: ['timeout=5, max=1000']
       STSCI-ML-Item-Count: ['25']
       STSCI-ML-Page: ['1']
@@ -165,8 +165,8 @@ interactions:
       Status: [200 OK]
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [fc586822-69fc-40be-82b7-2e16ba379fad]
-      X-Runtime: ['0.004339']
+      X-Request-Id: [a3e15162-9344-4763-b5a3-e17d4a84c8ff]
+      X-Runtime: ['0.005245']
       X-XSS-Protection: [1; mode=block]
       X-total-count: ['25']
     status: {code: 200, message: OK}
@@ -180,8 +180,9 @@ interactions:
     method: GET
     uri: http://hubblesite.org/api/v3/news?page=2
   response:
-    body: {string: "[{\"news_id\":\"2018-08\",\"name\":\"Hubble Sees Neptune's Mysterious
-        Shrinking Storm\",\"url\":\"http://hubblesite.org/news_release/news/2018-08\"},{\"news_id\":\"2018-07\",\"name\":\"Hubble
+    body: {string: "[{\"news_id\":\"2018-10\",\"name\":\"NASA's James Webb Space Telescope
+        to Reveal Secrets of the Red Planet\",\"url\":\"http://webbtelescope.org/articles/2018-10\"},{\"news_id\":\"2018-08\",\"name\":\"Hubble
+        Sees Neptune's Mysterious Shrinking Storm\",\"url\":\"http://hubblesite.org/news_release/news/2018-08\"},{\"news_id\":\"2018-07\",\"name\":\"Hubble
         Probes Atmospheres of Exoplanets in TRAPPIST-1 Habitable Zone\",\"url\":\"http://hubblesite.org/news_release/news/2018-07\"},{\"news_id\":\"2018-03\",\"name\":\"Hubble
         Finds Substellar Objects in the Orion Nebula\",\"url\":\"http://hubblesite.org/news_release/news/2018-03\"},{\"news_id\":\"2018-05\",\"name\":\"Researchers
         Catch Supermassive Black Hole Burping \u2014 Twice\",\"url\":\"http://hubblesite.org/news_release/news/2018-05\"},{\"news_id\":\"2018-02\",\"name\":\"NASA's
@@ -207,15 +208,14 @@ interactions:
         Webb Space Telescope\",\"url\":\"http://webbtelescope.org/articles/2017-28\"},{\"news_id\":\"2017-25\",\"name\":\"Hubble
         Astronomers Develop a New Use for a Century-Old Relativity Experiment to Measure
         a White Dwarf's Mass\",\"url\":\"http://hubblesite.org/news_release/news/2017-25\"},{\"news_id\":\"2017-24\",\"name\":\"Jackpot!
-        Cosmic Magnifying-Glass Effect Captures Universe's Brightest  Galaxies\",\"url\":\"http://hubblesite.org/news_release/news/2017-24\"},{\"news_id\":\"2017-23\",\"name\":\"Mini-Flares
-        Potentially Jeopardize Habitability of Planets Circling Red Dwarf Stars\",\"url\":\"http://hubblesite.org/news_release/news/2017-23\"}]"}
+        Cosmic Magnifying-Glass Effect Captures Universe's Brightest  Galaxies\",\"url\":\"http://hubblesite.org/news_release/news/2017-24\"}]"}
     headers:
       Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
       Connection: [Keep-Alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 07 Sep 2018 14:59:51 GMT']
-      ETag: [W/"ea4936eb84bd99bd85248ceabd4185fb"]
-      Expires: ['Sat, 07 Sep 2019 14:59:51 GMT']
+      Date: ['Fri, 14 Sep 2018 13:12:15 GMT']
+      ETag: [W/"97d1ce5f2995ad4b40e95e781e2aa8d9"]
+      Expires: ['Sat, 14 Sep 2019 13:12:15 GMT']
       Keep-Alive: ['timeout=5, max=1000']
       STSCI-ML-Item-Count: ['25']
       STSCI-ML-Page: ['2']
@@ -223,8 +223,8 @@ interactions:
       Status: [200 OK]
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [89d18b77-eafa-4dbb-849f-10a137806df0]
-      X-Runtime: ['0.030234']
+      X-Request-Id: [e40f6f60-f123-48d9-af56-220dfc9e614f]
+      X-Runtime: ['0.033451']
       X-XSS-Protection: [1; mode=block]
       X-total-count: ['25']
     status: {code: 200, message: OK}
@@ -238,8 +238,9 @@ interactions:
     method: GET
     uri: http://hubblesite.org/api/v3/news?page=3
   response:
-    body: {string: "[{\"news_id\":\"2017-22\",\"name\":\"Hubble's Tale of Two Exoplanets:
-        Nature vs. Nurture\",\"url\":\"http://hubblesite.org/news_release/news/2017-22\"},{\"news_id\":\"2017-19\",\"name\":\"Collapsing
+    body: {string: "[{\"news_id\":\"2017-23\",\"name\":\"Mini-Flares Potentially Jeopardize
+        Habitability of Planets Circling Red Dwarf Stars\",\"url\":\"http://hubblesite.org/news_release/news/2017-23\"},{\"news_id\":\"2017-22\",\"name\":\"Hubble's
+        Tale of Two Exoplanets: Nature vs. Nurture\",\"url\":\"http://hubblesite.org/news_release/news/2017-22\"},{\"news_id\":\"2017-19\",\"name\":\"Collapsing
         Star Gives Birth to a Black Hole\",\"url\":\"http://hubblesite.org/news_release/news/2017-19\"},{\"news_id\":\"2017-18\",\"name\":\"Hubble
         Spots Moon Around Third Largest Dwarf Planet\",\"url\":\"http://hubblesite.org/news_release/news/2017-18\"},{\"news_id\":\"2017-21\",\"name\":\"Observatories
         Combine to Crack Open the Crab Nebula\",\"url\":\"http://hubblesite.org/news_release/news/2017-21\"},{\"news_id\":\"2017-20\",\"name\":\"A
@@ -264,15 +265,14 @@ interactions:
         Provides Interstellar Road Map for Voyagers' Galactic Trek\",\"url\":\"http://hubblesite.org/news_release/news/2017-01\"},{\"news_id\":\"2016-42\",\"name\":\"Festive
         Nebulas Light Up Milky Way Galaxy Satellite\",\"url\":\"http://hubblesite.org/news_release/news/2016-42\"},{\"news_id\":\"2016-41\",\"name\":\"Space
         Telescope Science Institute to Host Data from World's Largest Digital Sky
-        Survey\",\"url\":\"http://hubblesite.org/news_release/news/2016-41\"},{\"news_id\":\"2016-46\",\"name\":\"STScI
-        Astronomers Nancy Levenson and David Soderblom Elected AAAS Fellows\",\"url\":\"http://hubblesite.org/news_release/news/2016-46\"}]"}
+        Survey\",\"url\":\"http://hubblesite.org/news_release/news/2016-41\"}]"}
     headers:
       Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
       Connection: [Keep-Alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 07 Sep 2018 14:59:51 GMT']
-      ETag: [W/"e8c94c500942cdd773fa24721bdfab66"]
-      Expires: ['Sat, 07 Sep 2019 14:59:51 GMT']
+      Date: ['Fri, 14 Sep 2018 13:12:15 GMT']
+      ETag: [W/"a496a7d05adf0b29a7c95a45c0acff8c"]
+      Expires: ['Sat, 14 Sep 2019 13:12:15 GMT']
       Keep-Alive: ['timeout=5, max=1000']
       STSCI-ML-Item-Count: ['25']
       STSCI-ML-Page: ['3']
@@ -280,8 +280,8 @@ interactions:
       Status: [200 OK]
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [da87862d-048e-473d-8359-728edef1c658]
-      X-Runtime: ['0.029397']
+      X-Request-Id: [b9f05364-3dc5-4919-9406-3393700f1746]
+      X-Runtime: ['0.032173']
       X-XSS-Protection: [1; mode=block]
       X-total-count: ['25']
     status: {code: 200, message: OK}
@@ -295,8 +295,9 @@ interactions:
     method: GET
     uri: http://hubblesite.org/api/v3/news?page=1
   response:
-    body: {string: "[{\"news_id\":\"2018-31\",\"name\":\"Success in Critical Communications
-        Tests for NASA's James Webb Space Telescope\",\"url\":\"http://webbtelescope.org/articles/2018-31\"},{\"news_id\":\"2018-41\",\"name\":\"Retiring
+    body: {string: "[{\"news_id\":\"2018-39\",\"name\":\"Hubble Goes Wide to Seek
+        Out Far-Flung Galaxies\",\"url\":\"http://hubblesite.org/news_release/news/2018-39\"},{\"news_id\":\"2018-31\",\"name\":\"Success
+        in Critical Communications Tests for NASA's James Webb Space Telescope\",\"url\":\"http://webbtelescope.org/articles/2018-31\"},{\"news_id\":\"2018-41\",\"name\":\"Retiring
         Hubble Visualization Expert Blended the Best of Science and Art\",\"url\":\"http://hubblesite.org/news_release/news/2018-41\"},{\"news_id\":\"2018-35\",\"name\":\"Hubble
         Paints Picture of the Evolving Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-35\"},{\"news_id\":\"2018-33\",\"name\":\"Astronomers
         Uncover New Clues to the Star that Wouldn't Die\",\"url\":\"http://hubblesite.org/news_release/news/2018-33\"},{\"news_id\":\"2018-29\",\"name\":\"Saturn
@@ -321,15 +322,14 @@ interactions:
         Webb Telescope to Make a Splash in the Search for Interstellar Water\",\"url\":\"http://webbtelescope.org/articles/2018-14\"},{\"news_id\":\"2018-11\",\"name\":\"Hubble
         Finds Huge System of Dusty Material Enveloping the Young Star HR 4796A\",\"url\":\"http://hubblesite.org/news_release/news/2018-11\"},{\"news_id\":\"2018-09\",\"name\":\"NASA
         Finds a Large Amount of Water in an Exoplanet's Atmosphere\",\"url\":\"http://hubblesite.org/news_release/news/2018-09\"},{\"news_id\":\"2018-12\",\"name\":\"Improved
-        Hubble Yardstick Gives Fresh Evidence for New Physics in the Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-12\"},{\"news_id\":\"2018-10\",\"name\":\"NASA's
-        James Webb Space Telescope to Reveal Secrets of the Red Planet\",\"url\":\"http://webbtelescope.org/articles/2018-10\"}]"}
+        Hubble Yardstick Gives Fresh Evidence for New Physics in the Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-12\"}]"}
     headers:
       Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
       Connection: [Keep-Alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 07 Sep 2018 14:59:51 GMT']
-      ETag: [W/"ff1b4675928cb4250384205f7aa25d4f"]
-      Expires: ['Sat, 07 Sep 2019 14:59:51 GMT']
+      Date: ['Fri, 14 Sep 2018 13:12:15 GMT']
+      ETag: [W/"134e9851410e93e768cf03e9c976e18a"]
+      Expires: ['Sat, 14 Sep 2019 13:12:15 GMT']
       Keep-Alive: ['timeout=5, max=1000']
       STSCI-ML-Item-Count: ['25']
       STSCI-ML-Page: ['1']
@@ -337,8 +337,8 @@ interactions:
       Status: [200 OK]
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [d0d45f9c-475f-4780-916a-700e9acc24e7]
-      X-Runtime: ['0.004961']
+      X-Request-Id: [f58644bd-bccf-491a-a5ac-08c33d43f3b1]
+      X-Runtime: ['0.005466']
       X-XSS-Protection: [1; mode=block]
       X-total-count: ['25']
     status: {code: 200, message: OK}
@@ -352,8 +352,9 @@ interactions:
     method: GET
     uri: http://hubblesite.org/api/v3/news?page=1
   response:
-    body: {string: "[{\"news_id\":\"2018-31\",\"name\":\"Success in Critical Communications
-        Tests for NASA's James Webb Space Telescope\",\"url\":\"http://webbtelescope.org/articles/2018-31\"},{\"news_id\":\"2018-41\",\"name\":\"Retiring
+    body: {string: "[{\"news_id\":\"2018-39\",\"name\":\"Hubble Goes Wide to Seek
+        Out Far-Flung Galaxies\",\"url\":\"http://hubblesite.org/news_release/news/2018-39\"},{\"news_id\":\"2018-31\",\"name\":\"Success
+        in Critical Communications Tests for NASA's James Webb Space Telescope\",\"url\":\"http://webbtelescope.org/articles/2018-31\"},{\"news_id\":\"2018-41\",\"name\":\"Retiring
         Hubble Visualization Expert Blended the Best of Science and Art\",\"url\":\"http://hubblesite.org/news_release/news/2018-41\"},{\"news_id\":\"2018-35\",\"name\":\"Hubble
         Paints Picture of the Evolving Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-35\"},{\"news_id\":\"2018-33\",\"name\":\"Astronomers
         Uncover New Clues to the Star that Wouldn't Die\",\"url\":\"http://hubblesite.org/news_release/news/2018-33\"},{\"news_id\":\"2018-29\",\"name\":\"Saturn
@@ -378,15 +379,14 @@ interactions:
         Webb Telescope to Make a Splash in the Search for Interstellar Water\",\"url\":\"http://webbtelescope.org/articles/2018-14\"},{\"news_id\":\"2018-11\",\"name\":\"Hubble
         Finds Huge System of Dusty Material Enveloping the Young Star HR 4796A\",\"url\":\"http://hubblesite.org/news_release/news/2018-11\"},{\"news_id\":\"2018-09\",\"name\":\"NASA
         Finds a Large Amount of Water in an Exoplanet's Atmosphere\",\"url\":\"http://hubblesite.org/news_release/news/2018-09\"},{\"news_id\":\"2018-12\",\"name\":\"Improved
-        Hubble Yardstick Gives Fresh Evidence for New Physics in the Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-12\"},{\"news_id\":\"2018-10\",\"name\":\"NASA's
-        James Webb Space Telescope to Reveal Secrets of the Red Planet\",\"url\":\"http://webbtelescope.org/articles/2018-10\"}]"}
+        Hubble Yardstick Gives Fresh Evidence for New Physics in the Universe\",\"url\":\"http://hubblesite.org/news_release/news/2018-12\"}]"}
     headers:
       Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
       Connection: [Keep-Alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 07 Sep 2018 14:59:52 GMT']
-      ETag: [W/"ff1b4675928cb4250384205f7aa25d4f"]
-      Expires: ['Sat, 07 Sep 2019 14:59:52 GMT']
+      Date: ['Fri, 14 Sep 2018 13:12:15 GMT']
+      ETag: [W/"134e9851410e93e768cf03e9c976e18a"]
+      Expires: ['Sat, 14 Sep 2019 13:12:15 GMT']
       Keep-Alive: ['timeout=5, max=1000']
       STSCI-ML-Item-Count: ['25']
       STSCI-ML-Page: ['1']
@@ -394,8 +394,8 @@ interactions:
       Status: [200 OK]
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [692fccc4-6783-4079-b92d-1a9cad193e48]
-      X-Runtime: ['0.004076']
+      X-Request-Id: [66b1a339-e619-4a37-92f2-ae1858f4c469]
+      X-Runtime: ['0.004427']
       X-XSS-Protection: [1; mode=block]
       X-total-count: ['25']
     status: {code: 200, message: OK}

@@ -36,9 +36,37 @@ def test_news_release():
     assert isinstance(p2, dict)
 
 
+@vcr.use_cassette('tests/cassettes/test_image_collections.yml')
 def test_image_collections():
-    pass
+    p1 = hubblepy.image_collections(collection_name='news')
+    p2 = hubblepy.image_collections(collection_name='news', page=[1, 2])
+    p3 = hubblepy.image_collections(collection_name='news', page=1)
+    p4 = hubblepy.image_collections(collection_name='news', page='1')
+    p5 = hubblepy.image_collections(collection_name='news', page=1, return_type='text')
+    p6 = hubblepy.image_collections(collection_name='news', page=1, return_type='content')
+
+    assert isinstance(p1, list)
+    assert isinstance(p1[0], dict)
+    assert isinstance(p2, list)
+    assert isinstance(p3, list)
+    assert isinstance(p3[0], dict)
+    assert isinstance(p4, list)
+    assert isinstance(p4[0], dict)
+    assert isinstance(p5, str)
+    assert isinstance(p6, bytes)
 
 
+@vcr.use_cassette('tests/cassettes/test_images.yml')
 def test_images():
-    pass
+    p1 = hubblepy.images(image_id=4229)
+    p2 = hubblepy.images(image_id=[4229, 4230])
+    p3 = hubblepy.images(image_id=4229, return_type='content')
+    p4 = hubblepy.images(image_id=4229, return_type='text')
+    p5 = hubblepy.images(image_id=[4229, 4230], return_type='text')
+
+    assert isinstance(p1, dict)
+    assert isinstance(p2, list)
+    assert isinstance(p3, bytes)
+    assert isinstance(p4, str)
+    assert isinstance(p5, list)
+    assert isinstance(p5[0], str)

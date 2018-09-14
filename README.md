@@ -10,7 +10,7 @@
 ## Requirements
 
 * Python 3.4+
-* `requests>=2.18`
+* `requests >= 2.18`
 
 ## Installation
 

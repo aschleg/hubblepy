@@ -4,5 +4,6 @@ $ cat .gitignore
 .idea/
 /build
 dist/
+notebooks/
 *.egg-info
 *.pyc
