@@ -1,0 +1,272 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/videos/science
+  response:
+    body: {string: '[{"id":1046,"name":"Milky Way Center in Multiple Wavelengths","image":"https://media.stsci.edu/uploads/video/image_attachment/1046/thumb_low_STScI-H-MWC_t420x236.png"},{"id":1141,"name":"A
+        Rose of Galaxies: Interacting Galaxies Arp 273","image":"https://media.stsci.edu/uploads/video/image_attachment/1141/thumb_low_arp273-example_frame-1920x1080.jpg"},{"id":1155,"name":"Flight
+        Through the Orion Nebula in Visible Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1155/thumb_low_orion_vis_dome-example_frame-1920x1080.png"},{"id":1154,"name":"Flight
+        Through the Orion Nebula in Infrared Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1154/thumb_low_orion_ir_dome-example_frame-1920x1080.png"},{"id":1153,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1153/thumb_low_orion_vis_ir_xfade_dome-example_frame-1920x1080.png"},{"id":1047,"name":"Kepler
+        Supernova Remnant in Multiple Wavelengths","image":"https://media.stsci.edu/uploads/video/image_attachment/1047/thumb_low_STScI-H-KeplerSNR_t420x236.png"},{"id":1045,"name":"M101
+        - Pinwheel Galaxy","image":"https://media.stsci.edu/uploads/video/image_attachment/1045/thumb_low_STScI-H-M101_t420x236.png"},{"id":1022,"name":"30
+        Doradus:  A Massive Star-Forming Region","image":"https://media.stsci.edu/uploads/video/image_attachment/1022/thumb_low_STScI-H-30_Dor_UVISIR-t420x236.png"},{"id":1028,"name":"The
+        Orion Nebula: Infrared and Visible Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1028/thumb_low_STScI-H-Orion_combined_t420x236.png"},{"id":1027,"name":"The
+        Whirlpool Galaxy: Visible and X-ray Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1027/thumb_low_STScI-M51-VIS_t420x236.png"},{"id":1052,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1052/thumb_low_orion_vis_ir-vr-example_frame-1920x1080.png"},{"id":1051,"name":"Flight
+        Through the Orion Nebula in Visible Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1051/thumb_low_orion_vis-vr-example_frame.png"},{"id":1050,"name":"Flight
+        Through the Orion Nebula in Infrared Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1050/thumb_low_orion_ir-vr-example_frame.png"},{"id":1026,"name":"HH666:
+        The Hidden Jet Launch","image":"https://media.stsci.edu/uploads/video/image_attachment/1026/thumb_low_STScI-H-HH666_IR-t420x236.png"},{"id":1023,"name":"Vision
+        Across the Full Spectrum: The Crab Nebula, from Radio to X-ray","image":"https://media.stsci.edu/uploads/video/image_attachment/1023/thumb_low_STScI-H-CrabNebula_t420x236.png"},{"id":1043,"name":"Lagoon
+        Nebula: Visible and Infrared Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1043/thumb_low_STScI-H-M8-Lagoon_VIS-t420x236.png"},{"id":1021,"name":"NGC
+        2207: Colliding Galaxies","image":"https://media.stsci.edu/uploads/video/image_attachment/1021/thumb_low_STScI-H-NGC2207-t420x236.png"},{"id":1034,"name":"Sculpture
+        Garden of Gas and Dust: Core of the Lagoon Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1034/thumb_low_lagoon_zoom_pan-example_frame-1920x1080.png"},{"id":1020,"name":"HH
+        901: Pillars in the Carina Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1020/thumb_low_STScI-H-HH901-t420x236.png"},{"id":1013,"name":"Journey
+        Into the Orion Nebula - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1013/thumb_low_orion_journey_vr-example_frame-1920x960.png"},{"id":1010,"name":"Journey
+        Into the Orion Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1010/thumb_low_orion_journey-example_frame-1920x1080.png"},{"id":1008,"name":"Journey
+        into the Orion Nebula - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1008/thumb_low_orion_journey_dome-example_frame-1920x1080.png"},{"id":1003,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light","image":"https://media.stsci.edu/uploads/video/image_attachment/1003/thumb_low_OrionVisIRFade-1920x1080.png"},{"id":984,"name":"A
+        Flight Through the CANDELS Ultra Deep Survey Field","image":"https://media.stsci.edu/uploads/video/image_attachment/984/thumb_low_uds_candels_fly_example_frame-1920x1080.png"},{"id":950,"name":"Perspectives
+        on Spiral Galaxies: NGC 4302 and NGC 4298","image":"https://media.stsci.edu/uploads/video/image_attachment/950/thumb_low_STScI-H-v1714b.png"}]'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:37:32 GMT']
+      ETag: [W/"a45758e62fb165d8f9e4e6ea8f3880e2"]
+      Expires: ['Sun, 15 Sep 2019 13:37:32 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['25']
+      STSCI-ML-Page: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [ea3e24d6-c4eb-441c-9ac6-e4c790e520de]
+      X-Runtime: ['0.005211']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['25']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/videos/science
+  response:
+    body: {string: '[{"id":1046,"name":"Milky Way Center in Multiple Wavelengths","image":"https://media.stsci.edu/uploads/video/image_attachment/1046/thumb_low_STScI-H-MWC_t420x236.png"},{"id":1141,"name":"A
+        Rose of Galaxies: Interacting Galaxies Arp 273","image":"https://media.stsci.edu/uploads/video/image_attachment/1141/thumb_low_arp273-example_frame-1920x1080.jpg"},{"id":1155,"name":"Flight
+        Through the Orion Nebula in Visible Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1155/thumb_low_orion_vis_dome-example_frame-1920x1080.png"},{"id":1154,"name":"Flight
+        Through the Orion Nebula in Infrared Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1154/thumb_low_orion_ir_dome-example_frame-1920x1080.png"},{"id":1153,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1153/thumb_low_orion_vis_ir_xfade_dome-example_frame-1920x1080.png"},{"id":1047,"name":"Kepler
+        Supernova Remnant in Multiple Wavelengths","image":"https://media.stsci.edu/uploads/video/image_attachment/1047/thumb_low_STScI-H-KeplerSNR_t420x236.png"},{"id":1045,"name":"M101
+        - Pinwheel Galaxy","image":"https://media.stsci.edu/uploads/video/image_attachment/1045/thumb_low_STScI-H-M101_t420x236.png"},{"id":1022,"name":"30
+        Doradus:  A Massive Star-Forming Region","image":"https://media.stsci.edu/uploads/video/image_attachment/1022/thumb_low_STScI-H-30_Dor_UVISIR-t420x236.png"},{"id":1028,"name":"The
+        Orion Nebula: Infrared and Visible Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1028/thumb_low_STScI-H-Orion_combined_t420x236.png"},{"id":1027,"name":"The
+        Whirlpool Galaxy: Visible and X-ray Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1027/thumb_low_STScI-M51-VIS_t420x236.png"},{"id":1052,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1052/thumb_low_orion_vis_ir-vr-example_frame-1920x1080.png"},{"id":1051,"name":"Flight
+        Through the Orion Nebula in Visible Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1051/thumb_low_orion_vis-vr-example_frame.png"},{"id":1050,"name":"Flight
+        Through the Orion Nebula in Infrared Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1050/thumb_low_orion_ir-vr-example_frame.png"},{"id":1026,"name":"HH666:
+        The Hidden Jet Launch","image":"https://media.stsci.edu/uploads/video/image_attachment/1026/thumb_low_STScI-H-HH666_IR-t420x236.png"},{"id":1023,"name":"Vision
+        Across the Full Spectrum: The Crab Nebula, from Radio to X-ray","image":"https://media.stsci.edu/uploads/video/image_attachment/1023/thumb_low_STScI-H-CrabNebula_t420x236.png"},{"id":1043,"name":"Lagoon
+        Nebula: Visible and Infrared Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1043/thumb_low_STScI-H-M8-Lagoon_VIS-t420x236.png"},{"id":1021,"name":"NGC
+        2207: Colliding Galaxies","image":"https://media.stsci.edu/uploads/video/image_attachment/1021/thumb_low_STScI-H-NGC2207-t420x236.png"},{"id":1034,"name":"Sculpture
+        Garden of Gas and Dust: Core of the Lagoon Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1034/thumb_low_lagoon_zoom_pan-example_frame-1920x1080.png"},{"id":1020,"name":"HH
+        901: Pillars in the Carina Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1020/thumb_low_STScI-H-HH901-t420x236.png"},{"id":1013,"name":"Journey
+        Into the Orion Nebula - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1013/thumb_low_orion_journey_vr-example_frame-1920x960.png"},{"id":1010,"name":"Journey
+        Into the Orion Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1010/thumb_low_orion_journey-example_frame-1920x1080.png"},{"id":1008,"name":"Journey
+        into the Orion Nebula - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1008/thumb_low_orion_journey_dome-example_frame-1920x1080.png"},{"id":1003,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light","image":"https://media.stsci.edu/uploads/video/image_attachment/1003/thumb_low_OrionVisIRFade-1920x1080.png"},{"id":984,"name":"A
+        Flight Through the CANDELS Ultra Deep Survey Field","image":"https://media.stsci.edu/uploads/video/image_attachment/984/thumb_low_uds_candels_fly_example_frame-1920x1080.png"},{"id":950,"name":"Perspectives
+        on Spiral Galaxies: NGC 4302 and NGC 4298","image":"https://media.stsci.edu/uploads/video/image_attachment/950/thumb_low_STScI-H-v1714b.png"}]'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:37:32 GMT']
+      ETag: [W/"a45758e62fb165d8f9e4e6ea8f3880e2"]
+      Expires: ['Sun, 15 Sep 2019 13:37:32 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['25']
+      STSCI-ML-Page: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [acf62ae1-062f-4716-85cb-06b27854694b]
+      X-Runtime: ['0.004654']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['25']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/videos/science
+  response:
+    body: {string: '[{"id":1046,"name":"Milky Way Center in Multiple Wavelengths","image":"https://media.stsci.edu/uploads/video/image_attachment/1046/thumb_low_STScI-H-MWC_t420x236.png"},{"id":1141,"name":"A
+        Rose of Galaxies: Interacting Galaxies Arp 273","image":"https://media.stsci.edu/uploads/video/image_attachment/1141/thumb_low_arp273-example_frame-1920x1080.jpg"},{"id":1155,"name":"Flight
+        Through the Orion Nebula in Visible Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1155/thumb_low_orion_vis_dome-example_frame-1920x1080.png"},{"id":1154,"name":"Flight
+        Through the Orion Nebula in Infrared Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1154/thumb_low_orion_ir_dome-example_frame-1920x1080.png"},{"id":1153,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1153/thumb_low_orion_vis_ir_xfade_dome-example_frame-1920x1080.png"},{"id":1047,"name":"Kepler
+        Supernova Remnant in Multiple Wavelengths","image":"https://media.stsci.edu/uploads/video/image_attachment/1047/thumb_low_STScI-H-KeplerSNR_t420x236.png"},{"id":1045,"name":"M101
+        - Pinwheel Galaxy","image":"https://media.stsci.edu/uploads/video/image_attachment/1045/thumb_low_STScI-H-M101_t420x236.png"},{"id":1022,"name":"30
+        Doradus:  A Massive Star-Forming Region","image":"https://media.stsci.edu/uploads/video/image_attachment/1022/thumb_low_STScI-H-30_Dor_UVISIR-t420x236.png"},{"id":1028,"name":"The
+        Orion Nebula: Infrared and Visible Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1028/thumb_low_STScI-H-Orion_combined_t420x236.png"},{"id":1027,"name":"The
+        Whirlpool Galaxy: Visible and X-ray Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1027/thumb_low_STScI-M51-VIS_t420x236.png"},{"id":1052,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1052/thumb_low_orion_vis_ir-vr-example_frame-1920x1080.png"},{"id":1051,"name":"Flight
+        Through the Orion Nebula in Visible Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1051/thumb_low_orion_vis-vr-example_frame.png"},{"id":1050,"name":"Flight
+        Through the Orion Nebula in Infrared Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1050/thumb_low_orion_ir-vr-example_frame.png"},{"id":1026,"name":"HH666:
+        The Hidden Jet Launch","image":"https://media.stsci.edu/uploads/video/image_attachment/1026/thumb_low_STScI-H-HH666_IR-t420x236.png"},{"id":1023,"name":"Vision
+        Across the Full Spectrum: The Crab Nebula, from Radio to X-ray","image":"https://media.stsci.edu/uploads/video/image_attachment/1023/thumb_low_STScI-H-CrabNebula_t420x236.png"},{"id":1043,"name":"Lagoon
+        Nebula: Visible and Infrared Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1043/thumb_low_STScI-H-M8-Lagoon_VIS-t420x236.png"},{"id":1021,"name":"NGC
+        2207: Colliding Galaxies","image":"https://media.stsci.edu/uploads/video/image_attachment/1021/thumb_low_STScI-H-NGC2207-t420x236.png"},{"id":1034,"name":"Sculpture
+        Garden of Gas and Dust: Core of the Lagoon Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1034/thumb_low_lagoon_zoom_pan-example_frame-1920x1080.png"},{"id":1020,"name":"HH
+        901: Pillars in the Carina Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1020/thumb_low_STScI-H-HH901-t420x236.png"},{"id":1013,"name":"Journey
+        Into the Orion Nebula - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1013/thumb_low_orion_journey_vr-example_frame-1920x960.png"},{"id":1010,"name":"Journey
+        Into the Orion Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1010/thumb_low_orion_journey-example_frame-1920x1080.png"},{"id":1008,"name":"Journey
+        into the Orion Nebula - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1008/thumb_low_orion_journey_dome-example_frame-1920x1080.png"},{"id":1003,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light","image":"https://media.stsci.edu/uploads/video/image_attachment/1003/thumb_low_OrionVisIRFade-1920x1080.png"},{"id":984,"name":"A
+        Flight Through the CANDELS Ultra Deep Survey Field","image":"https://media.stsci.edu/uploads/video/image_attachment/984/thumb_low_uds_candels_fly_example_frame-1920x1080.png"},{"id":950,"name":"Perspectives
+        on Spiral Galaxies: NGC 4302 and NGC 4298","image":"https://media.stsci.edu/uploads/video/image_attachment/950/thumb_low_STScI-H-v1714b.png"}]'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:37:32 GMT']
+      ETag: [W/"a45758e62fb165d8f9e4e6ea8f3880e2"]
+      Expires: ['Sun, 15 Sep 2019 13:37:32 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['25']
+      STSCI-ML-Page: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [f1e4453c-39bc-4803-aecd-403eeaab6c45]
+      X-Runtime: ['0.004818']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['25']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/videos/science
+  response:
+    body: {string: '[{"id":1046,"name":"Milky Way Center in Multiple Wavelengths","image":"https://media.stsci.edu/uploads/video/image_attachment/1046/thumb_low_STScI-H-MWC_t420x236.png"},{"id":1141,"name":"A
+        Rose of Galaxies: Interacting Galaxies Arp 273","image":"https://media.stsci.edu/uploads/video/image_attachment/1141/thumb_low_arp273-example_frame-1920x1080.jpg"},{"id":1155,"name":"Flight
+        Through the Orion Nebula in Visible Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1155/thumb_low_orion_vis_dome-example_frame-1920x1080.png"},{"id":1154,"name":"Flight
+        Through the Orion Nebula in Infrared Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1154/thumb_low_orion_ir_dome-example_frame-1920x1080.png"},{"id":1153,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1153/thumb_low_orion_vis_ir_xfade_dome-example_frame-1920x1080.png"},{"id":1047,"name":"Kepler
+        Supernova Remnant in Multiple Wavelengths","image":"https://media.stsci.edu/uploads/video/image_attachment/1047/thumb_low_STScI-H-KeplerSNR_t420x236.png"},{"id":1045,"name":"M101
+        - Pinwheel Galaxy","image":"https://media.stsci.edu/uploads/video/image_attachment/1045/thumb_low_STScI-H-M101_t420x236.png"},{"id":1022,"name":"30
+        Doradus:  A Massive Star-Forming Region","image":"https://media.stsci.edu/uploads/video/image_attachment/1022/thumb_low_STScI-H-30_Dor_UVISIR-t420x236.png"},{"id":1028,"name":"The
+        Orion Nebula: Infrared and Visible Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1028/thumb_low_STScI-H-Orion_combined_t420x236.png"},{"id":1027,"name":"The
+        Whirlpool Galaxy: Visible and X-ray Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1027/thumb_low_STScI-M51-VIS_t420x236.png"},{"id":1052,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1052/thumb_low_orion_vis_ir-vr-example_frame-1920x1080.png"},{"id":1051,"name":"Flight
+        Through the Orion Nebula in Visible Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1051/thumb_low_orion_vis-vr-example_frame.png"},{"id":1050,"name":"Flight
+        Through the Orion Nebula in Infrared Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1050/thumb_low_orion_ir-vr-example_frame.png"},{"id":1026,"name":"HH666:
+        The Hidden Jet Launch","image":"https://media.stsci.edu/uploads/video/image_attachment/1026/thumb_low_STScI-H-HH666_IR-t420x236.png"},{"id":1023,"name":"Vision
+        Across the Full Spectrum: The Crab Nebula, from Radio to X-ray","image":"https://media.stsci.edu/uploads/video/image_attachment/1023/thumb_low_STScI-H-CrabNebula_t420x236.png"},{"id":1043,"name":"Lagoon
+        Nebula: Visible and Infrared Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1043/thumb_low_STScI-H-M8-Lagoon_VIS-t420x236.png"},{"id":1021,"name":"NGC
+        2207: Colliding Galaxies","image":"https://media.stsci.edu/uploads/video/image_attachment/1021/thumb_low_STScI-H-NGC2207-t420x236.png"},{"id":1034,"name":"Sculpture
+        Garden of Gas and Dust: Core of the Lagoon Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1034/thumb_low_lagoon_zoom_pan-example_frame-1920x1080.png"},{"id":1020,"name":"HH
+        901: Pillars in the Carina Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1020/thumb_low_STScI-H-HH901-t420x236.png"},{"id":1013,"name":"Journey
+        Into the Orion Nebula - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1013/thumb_low_orion_journey_vr-example_frame-1920x960.png"},{"id":1010,"name":"Journey
+        Into the Orion Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1010/thumb_low_orion_journey-example_frame-1920x1080.png"},{"id":1008,"name":"Journey
+        into the Orion Nebula - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1008/thumb_low_orion_journey_dome-example_frame-1920x1080.png"},{"id":1003,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light","image":"https://media.stsci.edu/uploads/video/image_attachment/1003/thumb_low_OrionVisIRFade-1920x1080.png"},{"id":984,"name":"A
+        Flight Through the CANDELS Ultra Deep Survey Field","image":"https://media.stsci.edu/uploads/video/image_attachment/984/thumb_low_uds_candels_fly_example_frame-1920x1080.png"},{"id":950,"name":"Perspectives
+        on Spiral Galaxies: NGC 4302 and NGC 4298","image":"https://media.stsci.edu/uploads/video/image_attachment/950/thumb_low_STScI-H-v1714b.png"}]'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:37:32 GMT']
+      ETag: [W/"a45758e62fb165d8f9e4e6ea8f3880e2"]
+      Expires: ['Sun, 15 Sep 2019 13:37:32 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['25']
+      STSCI-ML-Page: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [47c43512-33d9-4fd5-90e8-8523431fc2e7]
+      X-Runtime: ['0.004329']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['25']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/videos/science
+  response:
+    body: {string: '[{"id":1046,"name":"Milky Way Center in Multiple Wavelengths","image":"https://media.stsci.edu/uploads/video/image_attachment/1046/thumb_low_STScI-H-MWC_t420x236.png"},{"id":1141,"name":"A
+        Rose of Galaxies: Interacting Galaxies Arp 273","image":"https://media.stsci.edu/uploads/video/image_attachment/1141/thumb_low_arp273-example_frame-1920x1080.jpg"},{"id":1155,"name":"Flight
+        Through the Orion Nebula in Visible Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1155/thumb_low_orion_vis_dome-example_frame-1920x1080.png"},{"id":1154,"name":"Flight
+        Through the Orion Nebula in Infrared Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1154/thumb_low_orion_ir_dome-example_frame-1920x1080.png"},{"id":1153,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1153/thumb_low_orion_vis_ir_xfade_dome-example_frame-1920x1080.png"},{"id":1047,"name":"Kepler
+        Supernova Remnant in Multiple Wavelengths","image":"https://media.stsci.edu/uploads/video/image_attachment/1047/thumb_low_STScI-H-KeplerSNR_t420x236.png"},{"id":1045,"name":"M101
+        - Pinwheel Galaxy","image":"https://media.stsci.edu/uploads/video/image_attachment/1045/thumb_low_STScI-H-M101_t420x236.png"},{"id":1022,"name":"30
+        Doradus:  A Massive Star-Forming Region","image":"https://media.stsci.edu/uploads/video/image_attachment/1022/thumb_low_STScI-H-30_Dor_UVISIR-t420x236.png"},{"id":1028,"name":"The
+        Orion Nebula: Infrared and Visible Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1028/thumb_low_STScI-H-Orion_combined_t420x236.png"},{"id":1027,"name":"The
+        Whirlpool Galaxy: Visible and X-ray Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1027/thumb_low_STScI-M51-VIS_t420x236.png"},{"id":1052,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1052/thumb_low_orion_vis_ir-vr-example_frame-1920x1080.png"},{"id":1051,"name":"Flight
+        Through the Orion Nebula in Visible Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1051/thumb_low_orion_vis-vr-example_frame.png"},{"id":1050,"name":"Flight
+        Through the Orion Nebula in Infrared Light - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1050/thumb_low_orion_ir-vr-example_frame.png"},{"id":1026,"name":"HH666:
+        The Hidden Jet Launch","image":"https://media.stsci.edu/uploads/video/image_attachment/1026/thumb_low_STScI-H-HH666_IR-t420x236.png"},{"id":1023,"name":"Vision
+        Across the Full Spectrum: The Crab Nebula, from Radio to X-ray","image":"https://media.stsci.edu/uploads/video/image_attachment/1023/thumb_low_STScI-H-CrabNebula_t420x236.png"},{"id":1043,"name":"Lagoon
+        Nebula: Visible and Infrared Views","image":"https://media.stsci.edu/uploads/video/image_attachment/1043/thumb_low_STScI-H-M8-Lagoon_VIS-t420x236.png"},{"id":1021,"name":"NGC
+        2207: Colliding Galaxies","image":"https://media.stsci.edu/uploads/video/image_attachment/1021/thumb_low_STScI-H-NGC2207-t420x236.png"},{"id":1034,"name":"Sculpture
+        Garden of Gas and Dust: Core of the Lagoon Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1034/thumb_low_lagoon_zoom_pan-example_frame-1920x1080.png"},{"id":1020,"name":"HH
+        901: Pillars in the Carina Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1020/thumb_low_STScI-H-HH901-t420x236.png"},{"id":1013,"name":"Journey
+        Into the Orion Nebula - 360 Video","image":"https://media.stsci.edu/uploads/video/image_attachment/1013/thumb_low_orion_journey_vr-example_frame-1920x960.png"},{"id":1010,"name":"Journey
+        Into the Orion Nebula","image":"https://media.stsci.edu/uploads/video/image_attachment/1010/thumb_low_orion_journey-example_frame-1920x1080.png"},{"id":1008,"name":"Journey
+        into the Orion Nebula - Dome Version","image":"https://media.stsci.edu/uploads/video/image_attachment/1008/thumb_low_orion_journey_dome-example_frame-1920x1080.png"},{"id":1003,"name":"Flight
+        Through the Orion Nebula in Visible and Infrared Light","image":"https://media.stsci.edu/uploads/video/image_attachment/1003/thumb_low_OrionVisIRFade-1920x1080.png"},{"id":984,"name":"A
+        Flight Through the CANDELS Ultra Deep Survey Field","image":"https://media.stsci.edu/uploads/video/image_attachment/984/thumb_low_uds_candels_fly_example_frame-1920x1080.png"},{"id":950,"name":"Perspectives
+        on Spiral Galaxies: NGC 4302 and NGC 4298","image":"https://media.stsci.edu/uploads/video/image_attachment/950/thumb_low_STScI-H-v1714b.png"}]'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:37:32 GMT']
+      ETag: [W/"a45758e62fb165d8f9e4e6ea8f3880e2"]
+      Expires: ['Sun, 15 Sep 2019 13:37:32 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['25']
+      STSCI-ML-Page: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [0528fa67-3e39-47fb-8262-cb56f48b5dc9]
+      X-Runtime: ['0.004393']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['25']
+    status: {code: 200, message: OK}
+version: 1

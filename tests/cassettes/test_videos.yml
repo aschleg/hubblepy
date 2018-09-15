@@ -1,0 +1,232 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/video/55
+  response:
+    body: {string: '{"name":"Hubble Reborn","short_description":"Hubble''s 2002 repair
+        mission gave the telescope a new view of the universe.","credits":"VIDEO PRODUCTION:
+        John Stoke, Bryan Preston, Greg Bacon, Dana Berry (\u003ca href=\"http://www.stsci.edu/\"\u003eSTScI\u003c/a\u003e),
+        and NASA \r\nNARRATION: Deborah Benner  \r\nMUSIC: Associated Production Music","mission":"hubble","collection":"science","image":"https://media.stsci.edu/uploads/video/image_attachment/55/low_hubble-reborn-thumb-16x9.png","image_retina":"https://media.stsci.edu/uploads/video/image_attachment/55/hubble-reborn-thumb-16x9.png","video_files":[{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/262/reborn_448x336.flv","file_size":47052599,"width":448,"height":336,"format":"Flash
+        Video"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/261/reborn_640x480.swf","file_size":138697490,"width":640,"height":480,"format":"Macromedia
+        Flash"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/265/reborn_320x240.swf","file_size":84905979,"width":320,"height":240,"format":"Macromedia
+        Flash"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/264/reborn_320x240.mpg","file_size":43829252,"width":320,"height":240,"format":"MPEG-1"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/263/reborn_640x480.mov","file_size":94686728,"width":640,"height":480,"format":"MPEG-4
+        (H.264)"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/267/reborn_320x240.mov","file_size":51719764,"width":320,"height":240,"format":"MPEG-4
+        (H.264)"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/266/reborn_320x240.wmv","file_size":110924686,"width":320,"height":240,"format":"Windows
+        Media"}]}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:37:33 GMT']
+      ETag: [W/"a887db7f223d132ee914787d51b83e39"]
+      Expires: ['Sun, 15 Sep 2019 13:37:33 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [13afb141-3376-43b9-8273-1524b2b069ef]
+      X-Runtime: ['0.004371']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/video/55
+  response:
+    body: {string: '{"name":"Hubble Reborn","short_description":"Hubble''s 2002 repair
+        mission gave the telescope a new view of the universe.","credits":"VIDEO PRODUCTION:
+        John Stoke, Bryan Preston, Greg Bacon, Dana Berry (\u003ca href=\"http://www.stsci.edu/\"\u003eSTScI\u003c/a\u003e),
+        and NASA \r\nNARRATION: Deborah Benner  \r\nMUSIC: Associated Production Music","mission":"hubble","collection":"science","image":"https://media.stsci.edu/uploads/video/image_attachment/55/low_hubble-reborn-thumb-16x9.png","image_retina":"https://media.stsci.edu/uploads/video/image_attachment/55/hubble-reborn-thumb-16x9.png","video_files":[{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/262/reborn_448x336.flv","file_size":47052599,"width":448,"height":336,"format":"Flash
+        Video"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/261/reborn_640x480.swf","file_size":138697490,"width":640,"height":480,"format":"Macromedia
+        Flash"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/265/reborn_320x240.swf","file_size":84905979,"width":320,"height":240,"format":"Macromedia
+        Flash"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/264/reborn_320x240.mpg","file_size":43829252,"width":320,"height":240,"format":"MPEG-1"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/263/reborn_640x480.mov","file_size":94686728,"width":640,"height":480,"format":"MPEG-4
+        (H.264)"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/267/reborn_320x240.mov","file_size":51719764,"width":320,"height":240,"format":"MPEG-4
+        (H.264)"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/266/reborn_320x240.wmv","file_size":110924686,"width":320,"height":240,"format":"Windows
+        Media"}]}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:37:33 GMT']
+      ETag: [W/"a887db7f223d132ee914787d51b83e39"]
+      Expires: ['Sun, 15 Sep 2019 13:37:33 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [41f9400e-5ff2-4b4b-a837-c5c878f4fb4c]
+      X-Runtime: ['0.003892']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/video/55
+  response:
+    body: {string: '{"name":"Hubble Reborn","short_description":"Hubble''s 2002 repair
+        mission gave the telescope a new view of the universe.","credits":"VIDEO PRODUCTION:
+        John Stoke, Bryan Preston, Greg Bacon, Dana Berry (\u003ca href=\"http://www.stsci.edu/\"\u003eSTScI\u003c/a\u003e),
+        and NASA \r\nNARRATION: Deborah Benner  \r\nMUSIC: Associated Production Music","mission":"hubble","collection":"science","image":"https://media.stsci.edu/uploads/video/image_attachment/55/low_hubble-reborn-thumb-16x9.png","image_retina":"https://media.stsci.edu/uploads/video/image_attachment/55/hubble-reborn-thumb-16x9.png","video_files":[{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/262/reborn_448x336.flv","file_size":47052599,"width":448,"height":336,"format":"Flash
+        Video"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/261/reborn_640x480.swf","file_size":138697490,"width":640,"height":480,"format":"Macromedia
+        Flash"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/265/reborn_320x240.swf","file_size":84905979,"width":320,"height":240,"format":"Macromedia
+        Flash"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/264/reborn_320x240.mpg","file_size":43829252,"width":320,"height":240,"format":"MPEG-1"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/263/reborn_640x480.mov","file_size":94686728,"width":640,"height":480,"format":"MPEG-4
+        (H.264)"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/267/reborn_320x240.mov","file_size":51719764,"width":320,"height":240,"format":"MPEG-4
+        (H.264)"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/266/reborn_320x240.wmv","file_size":110924686,"width":320,"height":240,"format":"Windows
+        Media"}]}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:37:33 GMT']
+      ETag: [W/"a887db7f223d132ee914787d51b83e39"]
+      Expires: ['Sun, 15 Sep 2019 13:37:33 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [f6beef80-0d37-4615-854e-f6d87d622908]
+      X-Runtime: ['0.004034']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/video/55
+  response:
+    body: {string: '{"name":"Hubble Reborn","short_description":"Hubble''s 2002 repair
+        mission gave the telescope a new view of the universe.","credits":"VIDEO PRODUCTION:
+        John Stoke, Bryan Preston, Greg Bacon, Dana Berry (\u003ca href=\"http://www.stsci.edu/\"\u003eSTScI\u003c/a\u003e),
+        and NASA \r\nNARRATION: Deborah Benner  \r\nMUSIC: Associated Production Music","mission":"hubble","collection":"science","image":"https://media.stsci.edu/uploads/video/image_attachment/55/low_hubble-reborn-thumb-16x9.png","image_retina":"https://media.stsci.edu/uploads/video/image_attachment/55/hubble-reborn-thumb-16x9.png","video_files":[{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/262/reborn_448x336.flv","file_size":47052599,"width":448,"height":336,"format":"Flash
+        Video"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/261/reborn_640x480.swf","file_size":138697490,"width":640,"height":480,"format":"Macromedia
+        Flash"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/265/reborn_320x240.swf","file_size":84905979,"width":320,"height":240,"format":"Macromedia
+        Flash"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/264/reborn_320x240.mpg","file_size":43829252,"width":320,"height":240,"format":"MPEG-1"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/263/reborn_640x480.mov","file_size":94686728,"width":640,"height":480,"format":"MPEG-4
+        (H.264)"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/267/reborn_320x240.mov","file_size":51719764,"width":320,"height":240,"format":"MPEG-4
+        (H.264)"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/266/reborn_320x240.wmv","file_size":110924686,"width":320,"height":240,"format":"Windows
+        Media"}]}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:37:33 GMT']
+      ETag: [W/"a887db7f223d132ee914787d51b83e39"]
+      Expires: ['Sun, 15 Sep 2019 13:37:33 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [c163bfde-0877-43ea-ba02-9f07b71d86b5]
+      X-Runtime: ['0.003720']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/video/55
+  response:
+    body: {string: '{"name":"Hubble Reborn","short_description":"Hubble''s 2002 repair
+        mission gave the telescope a new view of the universe.","credits":"VIDEO PRODUCTION:
+        John Stoke, Bryan Preston, Greg Bacon, Dana Berry (\u003ca href=\"http://www.stsci.edu/\"\u003eSTScI\u003c/a\u003e),
+        and NASA \r\nNARRATION: Deborah Benner  \r\nMUSIC: Associated Production Music","mission":"hubble","collection":"science","image":"https://media.stsci.edu/uploads/video/image_attachment/55/low_hubble-reborn-thumb-16x9.png","image_retina":"https://media.stsci.edu/uploads/video/image_attachment/55/hubble-reborn-thumb-16x9.png","video_files":[{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/262/reborn_448x336.flv","file_size":47052599,"width":448,"height":336,"format":"Flash
+        Video"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/261/reborn_640x480.swf","file_size":138697490,"width":640,"height":480,"format":"Macromedia
+        Flash"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/265/reborn_320x240.swf","file_size":84905979,"width":320,"height":240,"format":"Macromedia
+        Flash"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/264/reborn_320x240.mpg","file_size":43829252,"width":320,"height":240,"format":"MPEG-1"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/263/reborn_640x480.mov","file_size":94686728,"width":640,"height":480,"format":"MPEG-4
+        (H.264)"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/267/reborn_320x240.mov","file_size":51719764,"width":320,"height":240,"format":"MPEG-4
+        (H.264)"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/266/reborn_320x240.wmv","file_size":110924686,"width":320,"height":240,"format":"Windows
+        Media"}]}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:37:34 GMT']
+      ETag: [W/"a887db7f223d132ee914787d51b83e39"]
+      Expires: ['Sun, 15 Sep 2019 13:37:34 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [bce634bc-effe-4caa-b3c5-29a979bcd0fc]
+      X-Runtime: ['0.003816']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/video/58
+  response:
+    body: {string: '{"name":"Hubble 2003","short_description":"A look back at the
+        top Hubble discoveries of 2002, and predictions for future finds.","credits":"Video
+        Production: \u003ca href=\"http://www.nasa.gov/\"\u003eNASA\u003c/a\u003e,
+        John Stoke, Bryan Preston, Greg Bacon, and Frank Summers (\u003ca href=\"http://www.stsci.edu/\"\u003eSTScI\u003c/a\u003e),
+        Dana Berry, Ken Lanzetta, and \u003ca href=\"http://www.spacetelescope.org/\"\u003eESA\u003c/a\u003e;  \r\nNarration:
+        David DeBoy;  \r\nMusic: Associated Production Music","mission":"hubble","collection":"science","image":"https://media.stsci.edu/uploads/video/image_attachment/58/low_hubble-2003-thumb-16x9.png","image_retina":"https://media.stsci.edu/uploads/video/image_attachment/58/hubble-2003-thumb-16x9.png","video_files":[{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/284/hst2003_448x336.flv","file_size":80563133,"width":448,"height":336,"format":"Flash
+        Video"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/288/hst2003_640x480.swf","file_size":93290120,"width":640,"height":480,"format":"Macromedia
+        Flash"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/282/hst2003_320x240.swf","file_size":91788977,"width":320,"height":240,"format":"Macromedia
+        Flash"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/287/hst2003_320x240.mpg","file_size":97882116,"width":320,"height":240,"format":"MPEG-1"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/286/hst2003_640x480.mov","file_size":163600092,"width":640,"height":480,"format":"MPEG-4
+        (H.264)"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/283/hst2003_320x240.mov","file_size":88203451,"width":320,"height":240,"format":"MPEG-4
+        (H.264)"},{"file_url":"https://media.stsci.edu/uploads/video_file/video_attachment/285/hst2003_320x240.wmv","file_size":112355216,"width":320,"height":240,"format":"Windows
+        Media"}]}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:37:34 GMT']
+      ETag: [W/"967df45de4592550fc8ad374b9b6e338"]
+      Expires: ['Sun, 15 Sep 2019 13:37:34 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [73cb05a2-32a1-4901-933c-03bcd48417b8]
+      X-Runtime: ['0.004108']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+version: 1

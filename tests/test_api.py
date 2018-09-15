@@ -70,3 +70,73 @@ def test_images():
     assert isinstance(p4, str)
     assert isinstance(p5, list)
     assert isinstance(p5[0], str)
+
+
+@vcr.use_cassette('tests/cassettes/test_video_collections.yml')
+def test_video_collections():
+    p1 = hubblepy.video_collections(collection_name='science')
+    p2 = hubblepy.video_collections(collection_name='science', page=2)
+    p3 = hubblepy.video_collections(collection_name='science', page='all')
+    p4 = hubblepy.video_collections(collection_name='science', return_type='content')
+    p5 = hubblepy.video_collections(collection_name='science', return_type='text')
+
+    assert isinstance(p1[0], dict)
+    assert isinstance(p1, list)
+    assert isinstance(p2[0], dict)
+    assert isinstance(p2, list)
+    assert isinstance(p3[0], dict)
+    assert isinstance(p3, list)
+    assert isinstance(p4, bytes)
+    assert isinstance(p5, str)
+
+
+@vcr.use_cassette('tests/cassettes/test_videos.yml')
+def test_videos():
+    p1 = hubblepy.videos(video_id='55')
+    p2 = hubblepy.videos(video_id=55)
+    p3 = hubblepy.videos(video_id='55', return_type='content')
+    p4 = hubblepy.videos('55', return_type='text')
+    p5 = hubblepy.videos(video_id=[55, 58])
+
+    assert isinstance(p1, dict)
+    assert isinstance(p2, dict)
+    assert isinstance(p3, bytes)
+    assert isinstance(p4, str)
+    assert isinstance(p5, list)
+    assert isinstance(p5[0], dict)
+
+
+@vcr.use_cassette('tests/cassettes/test_glossary.yml')
+def test_glossary():
+    p1 = hubblepy.glossary()
+    p2 = hubblepy.glossary(page=2)
+    p3 = hubblepy.glossary(page='all')
+    p4 = hubblepy.glossary(page=2, return_type='content')
+    p5 = hubblepy.glossary(page=2, return_type='text')
+    p6 = hubblepy.glossary(page=[1, 2])
+
+    assert isinstance(p1[0], dict)
+    assert isinstance(p1, list)
+    assert isinstance(p2[0], dict)
+    assert isinstance(p2, list)
+    assert isinstance(p3[0], dict)
+    assert isinstance(p3, list)
+    assert isinstance(p4, bytes)
+    assert isinstance(p5, str)
+    assert isinstance(p6, list)
+    assert isinstance(p6[0], list)
+    assert isinstance(p6[0][0], dict)
+
+
+@vcr.use_cassette('tests/cassettes/test_glossary_term.yml')
+def test_glossary_term():
+    p1 = hubblepy.glossary_term(term='asteroid')
+    p2 = hubblepy.glossary_term(term=['asteroid', 'planet'])
+    p3 = hubblepy.glossary_term(term='asteroid', return_type='content')
+    p4 = hubblepy.glossary_term(term='asteroid', return_type='text')
+
+    assert isinstance(p1, dict)
+    assert isinstance(p2, list)
+    assert isinstance(p2[0], dict)
+    assert isinstance(p3, bytes)
+    assert isinstance(p4, str)

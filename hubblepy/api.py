@@ -88,22 +88,18 @@ def images(image_id, return_type='json'):
 def video_collections(page=None, collection_name=None, return_type='json'):
     endpoint = urljoin(api_url, 'videos/')
 
-    if page is None:
+    if not isinstance(page, (list, tuple)):
         r = requests.get(urljoin(endpoint, collection_name))
         res = _return_types(r, return_type)
 
     else:
-        if page == 'all' or isinstance(page, (str, int)):
-            r = requests.get(urljoin(endpoint, collection_name), params={'page': page})
-            res = _return_types(r, return_type)
-        else:
-            res = []
+        res = []
 
-            for i in page:
-                r = requests.get(urljoin(endpoint, collection_name), params={'page': i})
-                r = _return_types(r, return_type)
+        for i in page:
+            r = requests.get(urljoin(endpoint, collection_name), params={'page': i})
+            r = _return_types(r, return_type)
 
-                res.append(r)
+            res.append(r)
 
     return res
 
@@ -112,14 +108,14 @@ def videos(video_id, return_type='json'):
     endpoint = urljoin(api_url, 'video/')
 
     if not isinstance(video_id, (list, tuple)):
-        r = requests.get(urljoin(endpoint, video_id))
+        r = requests.get(urljoin(endpoint, str(video_id)))
         res = _return_types(r, return_type)
 
     else:
         res = []
 
         for i in video_id:
-            r = requests.get(urljoin(endpoint, i))
+            r = requests.get(urljoin(endpoint, str(i)))
             r = _return_types(r, return_type)
 
             res.append(r)
