@@ -31,9 +31,16 @@ def test_news():
 def test_news_release():
     p1 = hubblepy.news_release('first')
     p2 = hubblepy.news_release('2016-24')
+    p3 = hubblepy.news_release(['first', '2016-24'])
+    p4 = hubblepy.news_release('first', return_type='content')
+    p5 = hubblepy.news_release('first', return_type='text')
 
     assert isinstance(p1, dict)
     assert isinstance(p2, dict)
+    assert isinstance(p3, list)
+    assert isinstance(p3[0], dict)
+    assert isinstance(p4, bytes)
+    assert isinstance(p5, str)
 
 
 @vcr.use_cassette('tests/cassettes/test_image_collections.yml')
@@ -79,6 +86,7 @@ def test_video_collections():
     p3 = hubblepy.video_collections(collection_name='science', page='all')
     p4 = hubblepy.video_collections(collection_name='science', return_type='content')
     p5 = hubblepy.video_collections(collection_name='science', return_type='text')
+    p6 = hubblepy.video_collections(collection_name='science', page=[1, 2])
 
     assert isinstance(p1[0], dict)
     assert isinstance(p1, list)
@@ -88,6 +96,9 @@ def test_video_collections():
     assert isinstance(p3, list)
     assert isinstance(p4, bytes)
     assert isinstance(p5, str)
+    assert isinstance(p6, list)
+    assert isinstance(p6[0], list)
+    assert isinstance(p6[0][0], dict)
 
 
 @vcr.use_cassette('tests/cassettes/test_videos.yml')
@@ -178,3 +189,8 @@ def test_rss_posts():
     assert isinstance(p2[1], dict)
     assert isinstance(p3, bytes)
     assert isinstance(p4, str)
+
+
+def test_return_types_exceptions():
+    with pytest.raises(ValueError):
+        hubblepy.news_release(return_type='na')

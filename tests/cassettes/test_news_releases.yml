@@ -22,17 +22,17 @@ interactions:
       Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
       Connection: [Keep-Alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 15 Sep 2018 13:37:29 GMT']
+      Date: ['Sun, 16 Sep 2018 14:17:43 GMT']
       ETag: [W/"cd187a28ddaee577e369098fcc007d55"]
-      Expires: ['Sun, 15 Sep 2019 13:37:29 GMT']
+      Expires: ['Mon, 16 Sep 2019 14:17:43 GMT']
       Keep-Alive: ['timeout=5, max=1000']
       STSCI-ML-Item-Count: ['1']
       Server: [Apache/2.2.15]
       Status: [200 OK]
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [4888f579-d831-4d0e-83ed-aa339accecfe]
-      X-Runtime: ['0.018745']
+      X-Request-Id: [dbf7ea6f-c2b8-4e78-aeae-d14172a8660f]
+      X-Runtime: ['0.018303']
       X-XSS-Protection: [1; mode=block]
       X-total-count: ['1']
     status: {code: 200, message: OK}
@@ -72,17 +72,178 @@ interactions:
       Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
       Connection: [Keep-Alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 15 Sep 2018 13:37:29 GMT']
+      Date: ['Sun, 16 Sep 2018 14:17:44 GMT']
       ETag: [W/"398a1055831161aa042680561cfe0a06"]
-      Expires: ['Sun, 15 Sep 2019 13:37:29 GMT']
+      Expires: ['Mon, 16 Sep 2019 14:17:44 GMT']
       Keep-Alive: ['timeout=5, max=1000']
       STSCI-ML-Item-Count: ['1']
       Server: [Apache/2.2.15]
       Status: [200 OK]
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [522dedf8-c159-4c1c-8052-3841c52a1688]
-      X-Runtime: ['0.022198']
+      X-Request-Id: [7380f3c4-bfd0-498d-948e-216e02493878]
+      X-Runtime: ['0.022052']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/news_release/first
+  response:
+    body: {string: '{"name":"HST WC/PC First Light Image","news_id":"1990-04","url":"http://hubblesite.org/news_release/news/1990-04","publication":"1990-05-20T00:00:00.000-04:00","mission":"hubble","abstract":"On
+        the right is part of the first image taken with NASA''s Hubble Space Telescope''s
+        (HST) Wide Field/Planetary Camera. It is shown with a ground-based picture
+        from a Las Campanas, Chile, observatory of the same region of the sky. The
+        Las Campanas picture was taken with a 100-inch telescope and it is typical
+        of high-quality pictures obtained from the ground. All objects seen are stars
+        within the Milky Way galaxy.","credits":"Credit: \u003ca href=\"http://www.nasa.gov/\"\u003eNASA\u003c/a\u003e,
+        \u003ca href=\"http://www.spacetelescope.org/\"\u003eESA\u003c/a\u003e, and
+        \u003ca href=\"http://www.stsci.edu/\"\u003eSTScI\u003c/a\u003e","thumbnail":"https://media.stsci.edu/uploads/story/thumbnail/1/low_small_web.jpg","thumbnail_retina":"https://media.stsci.edu/uploads/story/thumbnail/1/small_web.jpg","thumbnail_1x":"https://media.stsci.edu/uploads/story/thumbnail/1/low_small_web.jpg","thumbnail_2x":"https://media.stsci.edu/uploads/story/thumbnail/1/small_web.jpg","release_images":[1]}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 16 Sep 2018 14:17:44 GMT']
+      ETag: [W/"cd187a28ddaee577e369098fcc007d55"]
+      Expires: ['Mon, 16 Sep 2019 14:17:44 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [8c2f0c19-d80e-48c1-82a1-c542e536e6c0]
+      X-Runtime: ['0.004417']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/news_release/2016-24
+  response:
+    body: {string: "{\"name\":\"Hubble Captures Vivid Auroras in Jupiter's Atmosphere\",\"news_id\":\"2016-24\",\"url\":\"http://hubblesite.org/news_release/news/2016-24\",\"publication\":\"2016-06-30T10:00:00.000-04:00\",\"mission\":\"hubble\",\"abstract\":\"Astronomers
+        are using NASA's Hubble Space Telescope to study auroras \u2014 stunning light
+        shows in a planet's atmosphere \u2014 on the poles of the largest planet in
+        the solar system, Jupiter. The auroras were photographed during a series of
+        Hubble Space Telescope Imaging Spectrograph far-ultraviolet-light observations
+        taking place as NASA's Juno spacecraft approaches and enters into orbit around
+        Jupiter. The aim of the program is to determine how Jupiter's auroras respond
+        to changing conditions in the solar wind, a stream of charged particles emitted
+        from the sun. Auroras are formed when charged particles in the space surrounding
+        the planet are accelerated to high energies along the planet's magnetic field.
+        When the particles hit the atmosphere near the magnetic poles, they cause
+        it to glow like gases in a fluorescent light fixture. Jupiter's magnetosphere
+        is 20,000 times stronger than Earth's. These observations will reveal how
+        the solar system's largest and most powerful magnetosphere behaves.\\r\\n\\r\\nThe
+        full-color disk of Jupiter in this image was separately photographed at a
+        different time by Hubble's Outer Planet Atmospheres Legacy (OPAL) program,
+        a long-term Hubble project that annually captures global maps of the outer
+        planets.\",\"credits\":\"Credit: \\u003ca href=\\\"http://www.nasa.gov/\\\"\\u003eNASA\\u003c/a\\u003e,
+        \\u003ca href=\\\"http://www.spacetelescope.org/\\\"\\u003eESA\\u003c/a\\u003e,
+        and J. Nichols (University of Leicester)\\r\\n\\r\\nAcknowledgment: A. Simon
+        (\\u003ca href=\\\"http://www.nasa.gov/\\\"\\u003eNASA\\u003c/a\\u003e/GSFC)
+        and the OPAL team\",\"thumbnail\":\"https://media.stsci.edu/uploads/story/thumbnail/1144/low_web.jpg\",\"thumbnail_retina\":\"https://media.stsci.edu/uploads/story/thumbnail/1144/web.jpg\",\"thumbnail_1x\":\"https://media.stsci.edu/uploads/story/thumbnail/1144/low_web.jpg\",\"thumbnail_2x\":\"https://media.stsci.edu/uploads/story/thumbnail/1144/web.jpg\",\"keystone_image_1x\":\"https://media.stsci.edu/uploads/story/display_image/1144/low_keystone.png\",\"keystone_image_2x\":\"https://media.stsci.edu/uploads/story/display_image/1144/keystone.png\",\"release_images\":[3756,3758,3757],\"release_videos\":[865,867,866,868]}"}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 16 Sep 2018 14:17:44 GMT']
+      ETag: [W/"398a1055831161aa042680561cfe0a06"]
+      Expires: ['Mon, 16 Sep 2019 14:17:44 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [899ef8ff-3c1d-4da6-aa8c-8c09e4cc59a9]
+      X-Runtime: ['0.004234']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/news_release/first
+  response:
+    body: {string: '{"name":"HST WC/PC First Light Image","news_id":"1990-04","url":"http://hubblesite.org/news_release/news/1990-04","publication":"1990-05-20T00:00:00.000-04:00","mission":"hubble","abstract":"On
+        the right is part of the first image taken with NASA''s Hubble Space Telescope''s
+        (HST) Wide Field/Planetary Camera. It is shown with a ground-based picture
+        from a Las Campanas, Chile, observatory of the same region of the sky. The
+        Las Campanas picture was taken with a 100-inch telescope and it is typical
+        of high-quality pictures obtained from the ground. All objects seen are stars
+        within the Milky Way galaxy.","credits":"Credit: \u003ca href=\"http://www.nasa.gov/\"\u003eNASA\u003c/a\u003e,
+        \u003ca href=\"http://www.spacetelescope.org/\"\u003eESA\u003c/a\u003e, and
+        \u003ca href=\"http://www.stsci.edu/\"\u003eSTScI\u003c/a\u003e","thumbnail":"https://media.stsci.edu/uploads/story/thumbnail/1/low_small_web.jpg","thumbnail_retina":"https://media.stsci.edu/uploads/story/thumbnail/1/small_web.jpg","thumbnail_1x":"https://media.stsci.edu/uploads/story/thumbnail/1/low_small_web.jpg","thumbnail_2x":"https://media.stsci.edu/uploads/story/thumbnail/1/small_web.jpg","release_images":[1]}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 16 Sep 2018 14:17:44 GMT']
+      ETag: [W/"cd187a28ddaee577e369098fcc007d55"]
+      Expires: ['Mon, 16 Sep 2019 14:17:44 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [1df1cb04-722b-411b-a04d-d88ca1657069]
+      X-Runtime: ['0.005141']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/news_release/first
+  response:
+    body: {string: '{"name":"HST WC/PC First Light Image","news_id":"1990-04","url":"http://hubblesite.org/news_release/news/1990-04","publication":"1990-05-20T00:00:00.000-04:00","mission":"hubble","abstract":"On
+        the right is part of the first image taken with NASA''s Hubble Space Telescope''s
+        (HST) Wide Field/Planetary Camera. It is shown with a ground-based picture
+        from a Las Campanas, Chile, observatory of the same region of the sky. The
+        Las Campanas picture was taken with a 100-inch telescope and it is typical
+        of high-quality pictures obtained from the ground. All objects seen are stars
+        within the Milky Way galaxy.","credits":"Credit: \u003ca href=\"http://www.nasa.gov/\"\u003eNASA\u003c/a\u003e,
+        \u003ca href=\"http://www.spacetelescope.org/\"\u003eESA\u003c/a\u003e, and
+        \u003ca href=\"http://www.stsci.edu/\"\u003eSTScI\u003c/a\u003e","thumbnail":"https://media.stsci.edu/uploads/story/thumbnail/1/low_small_web.jpg","thumbnail_retina":"https://media.stsci.edu/uploads/story/thumbnail/1/small_web.jpg","thumbnail_1x":"https://media.stsci.edu/uploads/story/thumbnail/1/low_small_web.jpg","thumbnail_2x":"https://media.stsci.edu/uploads/story/thumbnail/1/small_web.jpg","release_images":[1]}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 16 Sep 2018 14:17:44 GMT']
+      ETag: [W/"cd187a28ddaee577e369098fcc007d55"]
+      Expires: ['Mon, 16 Sep 2019 14:17:44 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [9d2faa9a-3cb5-4f67-bca8-b109222e5d06]
+      X-Runtime: ['0.005386']
       X-XSS-Protection: [1; mode=block]
       X-total-count: ['1']
     status: {code: 200, message: OK}
