@@ -140,3 +140,41 @@ def test_glossary_term():
     assert isinstance(p2[0], dict)
     assert isinstance(p3, bytes)
     assert isinstance(p4, str)
+
+
+@vcr.use_cassette('tests/cassettes/test_rss.yml')
+def test_rss():
+    p1 = hubblepy.rss(feed_name='esa_feed')
+    p2 = hubblepy.rss(feed_name='esa_feed', sort='asc', page=1)
+    p3 = hubblepy.rss(feed_name='esa_feed', sort='asc', page=[1, 2])
+    p4 = hubblepy.rss(feed_name='esa_feed', sort='asc', page='all')
+    p5 = hubblepy.rss(feed_name='esa_feed', return_type='content')
+    p6 = hubblepy.rss(feed_name='esa_feed', return_type='text')
+
+    assert isinstance(p1, list)
+    assert isinstance(p1[0], dict)
+    assert isinstance(p2, list)
+    assert isinstance(p2[0], dict)
+    assert isinstance(p2[1], dict)
+    assert isinstance(p3, list)
+    assert isinstance(p3[0], dict)
+    assert isinstance(p4, list)
+    assert isinstance(p4[0], dict)
+    assert isinstance(p5, bytes)
+    assert isinstance(p6, str)
+
+
+@vcr.use_cassette('tests/cassettes/test_rss_posts.yml')
+def test_rss_posts():
+    p1 = hubblepy.rss_posts(feed_name='esa_feed', pub_date='2017-03-23T13:00:00.000-04:00')
+    p2 = hubblepy.rss_posts(feed_name='esa_feed', pub_date=['2017-03-23T13:00:00.000-04:00',
+                                                            '2018-09-13T11:00:00.000-04:00'])
+    p3 = hubblepy.rss_posts(feed_name='esa_feed', pub_date='2017-03-23T13:00:00.000-04:00', return_type='content')
+    p4 = hubblepy.rss_posts(feed_name='esa_feed', pub_date='2017-03-23T13:00:00.000-04:00', return_type='text')
+
+    assert isinstance(p1, dict)
+    assert isinstance(p2, list)
+    assert isinstance(p2[0], dict)
+    assert isinstance(p2[1], dict)
+    assert isinstance(p3, bytes)
+    assert isinstance(p4, str)

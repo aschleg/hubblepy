@@ -172,7 +172,7 @@ def rss(feed_name, page=None, sort='desc', return_type='json'):
     if not isinstance(page, (list, tuple)):
         r = requests.get(urljoin(endpoint, feed_name), params={'page': page,
                                                                'sort': sort})
-        print(r.url)
+
         res = _return_types(r, return_type)
 
     else:
@@ -181,7 +181,7 @@ def rss(feed_name, page=None, sort='desc', return_type='json'):
         for i in page:
             r = requests.get(urljoin(endpoint, feed_name), params={'page': i,
                                                                    'sort': sort})
-            print(r.url)
+
             res = _return_types(r, return_type)
 
             res.append(r)

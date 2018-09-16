@@ -1,0 +1,181 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/external_feed/esa_feed/2017-03-23T13:00:00.000-04:00
+  response:
+    body: {string: '{"title":"Science Release: Hubble detects supermassive black hole
+        kicked out of galactic core","pub_date":"2017-03-23T13:00:00.000-04:00","description":"An
+        international team of astronomers using the NASA/ESA Hubble Space Telescope
+        have uncovered a supermassive black hole that has been propelled out of the
+        centre of the distant galaxy 3C186. The black hole was most likely ejected
+        by the power of gravitational waves. This is the first time that astronomers
+        found a supermassive black hole at such a large distance from its host galaxy
+        centre.","guid":"http://www.spacetelescope.org/news/heic1706/","image":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/heic1706a.jpg","image_square":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_low_heic1706a.jpg","image_square_large":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_heic1706a.jpg","thumbnail":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_low_heic1706a.jpg","thumbnail_large":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_heic1706a.jpg"}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 16 Sep 2018 14:08:17 GMT']
+      ETag: [W/"96ad8612118eb66223180a9bc60f7d94"]
+      Expires: ['Mon, 16 Sep 2019 14:08:17 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [ab917073-d68e-45b4-8102-5c67d0b7751c]
+      X-Runtime: ['0.004043']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/external_feed/esa_feed/2017-03-23T13:00:00.000-04:00
+  response:
+    body: {string: '{"title":"Science Release: Hubble detects supermassive black hole
+        kicked out of galactic core","pub_date":"2017-03-23T13:00:00.000-04:00","description":"An
+        international team of astronomers using the NASA/ESA Hubble Space Telescope
+        have uncovered a supermassive black hole that has been propelled out of the
+        centre of the distant galaxy 3C186. The black hole was most likely ejected
+        by the power of gravitational waves. This is the first time that astronomers
+        found a supermassive black hole at such a large distance from its host galaxy
+        centre.","guid":"http://www.spacetelescope.org/news/heic1706/","image":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/heic1706a.jpg","image_square":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_low_heic1706a.jpg","image_square_large":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_heic1706a.jpg","thumbnail":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_low_heic1706a.jpg","thumbnail_large":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_heic1706a.jpg"}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 16 Sep 2018 14:08:17 GMT']
+      ETag: [W/"96ad8612118eb66223180a9bc60f7d94"]
+      Expires: ['Mon, 16 Sep 2019 14:08:17 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [199263b5-cf6a-4b2a-b70c-6809528c3776]
+      X-Runtime: ['0.003844']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/external_feed/esa_feed/2018-09-13T11:00:00.000-04:00
+  response:
+    body: {string: '{"title":"Photo Release: BUFFALO charges towards the earliest
+        galaxies","pub_date":"2018-09-13T11:00:00.000-04:00","description":"The NASA/ESA
+        Hubble Space Telescope has started a new mission to shed light on the evolution
+        of the earliest galaxies in the Universe. The BUFFALO survey will observe
+        six massive galaxy clusters and their surroundings. The first observations
+        show the galaxy cluster Abell 370 and a host of magnified, gravitationally
+        lensed galaxies around it.","guid":"http://www.spacetelescope.org/news/heic1816/","image":"https://media.stsci.edu/uploads/feed_post/thumbnail/9629/heic1816a.jpg","image_square":"https://media.stsci.edu/uploads/feed_post/thumbnail/9629/square_low_heic1816a.jpg","image_square_large":"https://media.stsci.edu/uploads/feed_post/thumbnail/9629/square_heic1816a.jpg","thumbnail":"https://media.stsci.edu/uploads/feed_post/thumbnail/9629/thumb_low_heic1816a.jpg","thumbnail_large":"https://media.stsci.edu/uploads/feed_post/thumbnail/9629/thumb_heic1816a.jpg"}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 16 Sep 2018 14:08:17 GMT']
+      ETag: [W/"26e91f2b0d1af856e92b30aebd5696e8"]
+      Expires: ['Mon, 16 Sep 2019 14:08:17 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [97dc2447-eaac-4c02-9730-4720555cbdb2]
+      X-Runtime: ['0.003597']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/external_feed/esa_feed/2017-03-23T13:00:00.000-04:00
+  response:
+    body: {string: '{"title":"Science Release: Hubble detects supermassive black hole
+        kicked out of galactic core","pub_date":"2017-03-23T13:00:00.000-04:00","description":"An
+        international team of astronomers using the NASA/ESA Hubble Space Telescope
+        have uncovered a supermassive black hole that has been propelled out of the
+        centre of the distant galaxy 3C186. The black hole was most likely ejected
+        by the power of gravitational waves. This is the first time that astronomers
+        found a supermassive black hole at such a large distance from its host galaxy
+        centre.","guid":"http://www.spacetelescope.org/news/heic1706/","image":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/heic1706a.jpg","image_square":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_low_heic1706a.jpg","image_square_large":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_heic1706a.jpg","thumbnail":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_low_heic1706a.jpg","thumbnail_large":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_heic1706a.jpg"}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 16 Sep 2018 14:08:18 GMT']
+      ETag: [W/"96ad8612118eb66223180a9bc60f7d94"]
+      Expires: ['Mon, 16 Sep 2019 14:08:18 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [ff8b0641-03e6-49ed-982d-3dfe32d7ba2f]
+      X-Runtime: ['0.005260']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://hubblesite.org/api/v3/external_feed/esa_feed/2017-03-23T13:00:00.000-04:00
+  response:
+    body: {string: '{"title":"Science Release: Hubble detects supermassive black hole
+        kicked out of galactic core","pub_date":"2017-03-23T13:00:00.000-04:00","description":"An
+        international team of astronomers using the NASA/ESA Hubble Space Telescope
+        have uncovered a supermassive black hole that has been propelled out of the
+        centre of the distant galaxy 3C186. The black hole was most likely ejected
+        by the power of gravitational waves. This is the first time that astronomers
+        found a supermassive black hole at such a large distance from its host galaxy
+        centre.","guid":"http://www.spacetelescope.org/news/heic1706/","image":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/heic1706a.jpg","image_square":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_low_heic1706a.jpg","image_square_large":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_heic1706a.jpg","thumbnail":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_low_heic1706a.jpg","thumbnail_large":"https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_heic1706a.jpg"}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate', max-age=31536000]
+      Connection: [Keep-Alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 16 Sep 2018 14:08:18 GMT']
+      ETag: [W/"96ad8612118eb66223180a9bc60f7d94"]
+      Expires: ['Mon, 16 Sep 2019 14:08:18 GMT']
+      Keep-Alive: ['timeout=5, max=1000']
+      STSCI-ML-Item-Count: ['1']
+      Server: [Apache/2.2.15]
+      Status: [200 OK]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [d8cc60da-f08d-4890-85a4-44ba011f04b1]
+      X-Runtime: ['0.004073']
+      X-XSS-Protection: [1; mode=block]
+      X-total-count: ['1']
+    status: {code: 200, message: OK}
+version: 1
