@@ -193,4 +193,4 @@ def test_rss_posts():
 
 def test_return_types_exceptions():
     with pytest.raises(ValueError):
-        hubblepy.news_release(return_type='na')
+        hubblepy.news_release(which='first', return_type='na')
