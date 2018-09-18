@@ -15,6 +15,8 @@
 
 ## Installation
 
+## Examples
+
 ## Documentation
 
 * [Hubblesite.org API Documentation](http://hubblesite.org/api/documentation)
