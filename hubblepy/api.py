@@ -100,8 +100,19 @@ def news_release(which, return_type='json'):
     Examples
     --------
     >>> hubblepy.news_release(which='last')
-    {'abstract': 'Imagine crushing more than 50,000 aircraft carriers into the size of a baseball. This describes neutron stars. They are among the strangest objects in the universe. Neutron stars are a case of extreme physics produced by the unforgiving force of gravity. The entire core of an exploded star has been squeezed into a solid ball of neutrons with the density of an atom’s nucleus. Neutron stars spin as fast as a blender on puree. Some spit out death-star beams of intense radiation — like interstellar lighthouses. These are called pulsars.\r\n\r\nThese beams are normally seen in X-rays, gamma-rays, and radio waves. But astronomers used Hubble\'s near-infrared (IR) vision to look at a nearby neutron star cataloged RX J0806.4-4123. They were surprised to see a gush of IR light coming from a region around the neutron star. That infrared light might come from a circumstellar disk 18 billion miles across. Another idea is that a wind of subatomic particles from the pulsar’s magnetic field is slamming into interstellar gas. Hubble\'s IR vision opens a new window into understanding how these "infernal machines" work.\r\n',
-     'credits': '<a href="http://www.nasa.gov">NASA</a>, <a href="http://www.spacetelescope.org">ESA</a>, and B. Posselt (Pennsylania State University)',
+    {'abstract': 'Imagine crushing more than 50,000 aircraft carriers into the size of a baseball. This describes
+    neutron stars. They are among the strangest objects in the universe. Neutron stars are a case of extreme physics
+    produced by the unforgiving force of gravity. The entire core of an exploded star has been squeezed into a solid
+    ball of neutrons with the density of an atom’s nucleus. Neutron stars spin as fast as a blender on puree. Some
+    spit out death-star beams of intense radiation — like interstellar lighthouses.
+    These are called pulsars.\r\n\r\nThese beams are normally seen in X-rays, gamma-rays, and radio waves.
+    But astronomers used Hubble\'s near-infrared (IR) vision to look at a nearby neutron star cataloged RX J0806.4-4123.
+    They were surprised to see a gush of IR light coming from a region around the neutron star. That infrared light
+    might come from a circumstellar disk 18 billion miles across. Another idea is that a wind of subatomic particles
+    from the pulsar’s magnetic field is slamming into interstellar gas. Hubble\'s IR vision opens a new window into
+    understanding how these "infernal machines" work.\r\n',
+     'credits': '<a href="http://www.nasa.gov">NASA</a>, <a href="http://www.spacetelescope.org">ESA</a>, and B.
+     Posselt (Pennsylania State University)',
      'keystone_image_1x': 'https://media.stsci.edu/uploads/story/display_image/1243/low_STSCI-H-p1843a-k-1340x520.png',
      'keystone_image_2x': 'https://media.stsci.edu/uploads/story/display_image/1243/STSCI-H-p1843a-k-1340x520.png',
      'mission': 'hubble',
@@ -115,8 +126,19 @@ def news_release(which, return_type='json'):
      'thumbnail_retina': 'https://media.stsci.edu/uploads/story/thumbnail/1243/STSCI-H-p1843a-t-400x400.png',
      'url': 'http://hubblesite.org/news_release/news/2018-43'}
     >>> hubblepy.news_release(which=['last', 'first', '2016-24'])
-    [{'abstract': 'Imagine crushing more than 50,000 aircraft carriers into the size of a baseball. This describes neutron stars. They are among the strangest objects in the universe. Neutron stars are a case of extreme physics produced by the unforgiving force of gravity. The entire core of an exploded star has been squeezed into a solid ball of neutrons with the density of an atom’s nucleus. Neutron stars spin as fast as a blender on puree. Some spit out death-star beams of intense radiation — like interstellar lighthouses. These are called pulsars.\r\n\r\nThese beams are normally seen in X-rays, gamma-rays, and radio waves. But astronomers used Hubble\'s near-infrared (IR) vision to look at a nearby neutron star cataloged RX J0806.4-4123. They were surprised to see a gush of IR light coming from a region around the neutron star. That infrared light might come from a circumstellar disk 18 billion miles across. Another idea is that a wind of subatomic particles from the pulsar’s magnetic field is slamming into interstellar gas. Hubble\'s IR vision opens a new window into understanding how these "infernal machines" work.\r\n',
-      'credits': '<a href="http://www.nasa.gov">NASA</a>, <a href="http://www.spacetelescope.org">ESA</a>, and B. Posselt (Pennsylania State University)',
+    [{'abstract': 'Imagine crushing more than 50,000 aircraft carriers into the size of a baseball. This describes
+    neutron stars. They are among the strangest objects in the universe. Neutron stars are a case of extreme physics
+    produced by the unforgiving force of gravity. The entire core of an exploded star has been squeezed into a solid
+    ball of neutrons with the density of an atom’s nucleus. Neutron stars spin as fast as a blender on puree.
+    Some spit out death-star beams of intense radiation — like interstellar lighthouses. These are called
+    pulsars.\r\n\r\nThese beams are normally seen in X-rays, gamma-rays, and radio waves. But astronomers used
+    Hubble\'s near-infrared (IR) vision to look at a nearby neutron star cataloged RX J0806.4-4123. They were
+    surprised to see a gush of IR light coming from a region around the neutron star. That infrared light might
+    come from a circumstellar disk 18 billion miles across. Another idea is that a wind of subatomic particles from
+    the pulsar’s magnetic field is slamming into interstellar gas. Hubble\'s IR vision opens a new window into
+    understanding how these "infernal machines" work.\r\n',
+      'credits': '<a href="http://www.nasa.gov">NASA</a>, <a href="http://www.spacetelescope.org">ESA</a>, and B.
+      Posselt (Pennsylania State University)',
       'keystone_image_1x': 'https://media.stsci.edu/uploads/story/display_image/1243/low_STSCI-H-p1843a-k-1340x520.png',
       'keystone_image_2x': 'https://media.stsci.edu/uploads/story/display_image/1243/STSCI-H-p1843a-k-1340x520.png',
       'mission': 'hubble',
@@ -129,8 +151,12 @@ def news_release(which, return_type='json'):
       'thumbnail_2x': 'https://media.stsci.edu/uploads/story/thumbnail/1243/STSCI-H-p1843a-t-400x400.png',
       'thumbnail_retina': 'https://media.stsci.edu/uploads/story/thumbnail/1243/STSCI-H-p1843a-t-400x400.png',
       'url': 'http://hubblesite.org/news_release/news/2018-43'},
-     {'abstract': "On the right is part of the first image taken with NASA's Hubble Space Telescope's (HST) Wide Field/Planetary Camera. It is shown with a ground-based picture from a Las Campanas, Chile, observatory of the same region of the sky. The Las Campanas picture was taken with a 100-inch telescope and it is typical of high-quality pictures obtained from the ground. All objects seen are stars within the Milky Way galaxy.",
-      'credits': 'Credit: <a href="http://www.nasa.gov/">NASA</a>, <a href="http://www.spacetelescope.org/">ESA</a>, and <a href="http://www.stsci.edu/">STScI</a>',
+     {'abstract': "On the right is part of the first image taken with NASA's Hubble Space Telescope's (HST)
+     Wide Field/Planetary Camera. It is shown with a ground-based picture from a Las Campanas, Chile, observatory
+     of the same region of the sky. The Las Campanas picture was taken with a 100-inch telescope and it is typical of
+     high-quality pictures obtained from the ground. All objects seen are stars within the Milky Way galaxy.",
+      'credits': 'Credit: <a href="http://www.nasa.gov/">NASA</a>, <a href="http://www.spacetelescope.org/">ESA</a>,
+      and <a href="http://www.stsci.edu/">STScI</a>',
       'mission': 'hubble',
       'name': 'HST WC/PC First Light Image',
       'news_id': '1990-04',
@@ -141,8 +167,21 @@ def news_release(which, return_type='json'):
       'thumbnail_2x': 'https://media.stsci.edu/uploads/story/thumbnail/1/small_web.jpg',
       'thumbnail_retina': 'https://media.stsci.edu/uploads/story/thumbnail/1/small_web.jpg',
       'url': 'http://hubblesite.org/news_release/news/1990-04'},
-     {'abstract': "Astronomers are using NASA's Hubble Space Telescope to study auroras — stunning light shows in a planet's atmosphere — on the poles of the largest planet in the solar system, Jupiter. The auroras were photographed during a series of Hubble Space Telescope Imaging Spectrograph far-ultraviolet-light observations taking place as NASA's Juno spacecraft approaches and enters into orbit around Jupiter. The aim of the program is to determine how Jupiter's auroras respond to changing conditions in the solar wind, a stream of charged particles emitted from the sun. Auroras are formed when charged particles in the space surrounding the planet are accelerated to high energies along the planet's magnetic field. When the particles hit the atmosphere near the magnetic poles, they cause it to glow like gases in a fluorescent light fixture. Jupiter's magnetosphere is 20,000 times stronger than Earth's. These observations will reveal how the solar system's largest and most powerful magnetosphere behaves.\r\n\r\nThe full-color disk of Jupiter in this image was separately photographed at a different time by Hubble's Outer Planet Atmospheres Legacy (OPAL) program, a long-term Hubble project that annually captures global maps of the outer planets.",
-      'credits': 'Credit: <a href="http://www.nasa.gov/">NASA</a>, <a href="http://www.spacetelescope.org/">ESA</a>, and J. Nichols (University of Leicester)\r\n\r\nAcknowledgment: A. Simon (<a href="http://www.nasa.gov/">NASA</a>/GSFC) and the OPAL team',
+     {'abstract': "Astronomers are using NASA's Hubble Space Telescope to study auroras — stunning light shows in a
+     planet's atmosphere — on the poles of the largest planet in the solar system, Jupiter. The auroras were
+     photographed during a series of Hubble Space Telescope Imaging Spectrograph far-ultraviolet-light observations
+     taking place as NASA's Juno spacecraft approaches and enters into orbit around Jupiter. The aim of the program
+     is to determine how Jupiter's auroras respond to changing conditions in the solar wind, a stream of charged
+     particles emitted from the sun. Auroras are formed when charged particles in the space surrounding the planet
+     are accelerated to high energies along the planet's magnetic field. When the particles hit the atmosphere near
+     the magnetic poles, they cause it to glow like gases in a fluorescent light fixture. Jupiter's magnetosphere is
+     20,000 times stronger than Earth's. These observations will reveal how the solar system's largest and most
+     powerful magnetosphere behaves.\r\n\r\nThe full-color disk of Jupiter in this image was separately photographed
+     at a different time by Hubble's Outer Planet Atmospheres Legacy (OPAL) program, a long-term Hubble project that
+     annually captures global maps of the outer planets.",
+      'credits': 'Credit: <a href="http://www.nasa.gov/">NASA</a>, <a href="http://www.spacetelescope.org/">ESA</a>,
+      and J. Nichols (University of Leicester)\r\n\r\nAcknowledgment:
+      A. Simon (<a href="http://www.nasa.gov/">NASA</a>/GSFC) and the OPAL team',
       'keystone_image_1x': 'https://media.stsci.edu/uploads/story/display_image/1144/low_keystone.png',
       'keystone_image_2x': 'https://media.stsci.edu/uploads/story/display_image/1144/keystone.png',
       'mission': 'hubble',
@@ -273,7 +312,11 @@ def images(image_id, return_type='json'):
     >>> hubblepy.images(3823)
     {'collection': 'spacecraft',
      'credits': '<a href="http://www.nasa.gov">NASA</a>',
-     'description': "Astronauts remove the Wide Field and Planetary Camera to replace it with its more powerful successor, Wide Field and Planetary Camera 2, during Hubble’s first servicing mission in 1993. The camera, shaped something like a grand piano, weighs 610 pounds (277 kg) on Earth, but nothing in space. It can detect stars a billion times fainter than the ones we can see with our eyes. Most of Hubble's most popular pictures have been taken with this second camera.",
+     'description': "Astronauts remove the Wide Field and Planetary Camera to replace it with its more powerful
+     successor, Wide Field and Planetary Camera 2, during Hubble’s first servicing mission in 1993. The camera,
+     shaped something like a grand piano, weighs 610 pounds (277 kg) on Earth, but nothing in space. It can detect
+     stars a billion times fainter than the ones we can see with our eyes. Most of Hubble's most popular pictures
+     have been taken with this second camera.",
      'image_files': [{'file_size': 112455,
        'file_url': 'https://media.stsci.edu/uploads/image_file/image_attachment/29327/STScI-H-spacecraft15-title.pdf',
        'height': 612,
@@ -295,7 +338,11 @@ def images(image_id, return_type='json'):
     >>> hubblepy.images([3823, 3834])
     [{'collection': 'spacecraft',
       'credits': '<a href="http://www.nasa.gov">NASA</a>',
-      'description': "Astronauts remove the Wide Field and Planetary Camera to replace it with its more powerful successor, Wide Field and Planetary Camera 2, during Hubble’s first servicing mission in 1993. The camera, shaped something like a grand piano, weighs 610 pounds (277 kg) on Earth, but nothing in space. It can detect stars a billion times fainter than the ones we can see with our eyes. Most of Hubble's most popular pictures have been taken with this second camera.",
+      'description': "Astronauts remove the Wide Field and Planetary Camera to replace it with its more powerful
+      successor, Wide Field and Planetary Camera 2, during Hubble’s first servicing mission in 1993. The camera,
+      shaped something like a grand piano, weighs 610 pounds (277 kg) on Earth, but nothing in space. It can detect
+      stars a billion times fainter than the ones we can see with our eyes. Most of Hubble's most popular pictures
+      have been taken with this second camera.",
       'image_files': [{'file_size': 112455,
         'file_url': 'https://media.stsci.edu/uploads/image_file/image_attachment/29327/STScI-H-spacecraft15-title.pdf',
         'height': 612,
@@ -316,7 +363,11 @@ def images(image_id, return_type='json'):
       'name': 'A Second Look: Replacing the Wide Field and Planetary Camera (1993)'},
      {'collection': 'spacecraft',
       'credits': '<a href="http://www.nasa.gov">NASA</a>',
-      'description': "The Hubble Space Telescope drifts through space in this picture, taken by Space Shuttle Discovery during Hubble's second servicing mission in 1997. The 10-foot aperture door, open to admit light, closes to block out space debris. The observatory's solar panels and foil-like thermal blankets are clearly visible. The solar panels provide power, while the thermal blankets protect Hubble from the extreme temperatures of space.",
+      'description': "The Hubble Space Telescope drifts through space in this picture, taken by Space Shuttle Discovery
+      during Hubble's second servicing mission in 1997. The 10-foot aperture door, open to admit light, closes to
+      block out space debris. The observatory's solar panels and foil-like thermal blankets are clearly visible.
+      The solar panels provide power, while the thermal blankets protect Hubble from the extreme temperatures of
+      space.",
       'image_files': [{'file_size': 80695,
         'file_url': 'https://media.stsci.edu/uploads/image_file/image_attachment/29371/STScI-H-spacecraft03-title.pdf',
         'height': 612,
@@ -410,15 +461,47 @@ def video_collections(page=None, collection_name=None, return_type='json'):
 
 def videos(video_id, return_type='json'):
     r"""
+    Returns more specific metadata and information on published videos available on the HubbleSite.
 
     Parameters
     ----------
+    video_id : list, tuple, int or str
+        The ID of the video to return. Can be a list or tuple of ints or strings, or just a single int or str.
+    return_type : str, {'json', 'content', 'text'}
+        Specifies the return type of the results. Defaults to JSON.
 
     Returns
     -------
+    dict or list:
+        If only one video ID is passed, a dictionary of the metadata is returned. Otherwise, a list of dictionaries
+        is returned.
 
     Examples
     --------
+    >>> hubblepy.videos(1155)
+    {'collection': 'science',
+     'credits': 'Credits: NASA, ESA, F. Summers, G. Bacon, Z. Levay, J. DePasquale, L. Hustak, L. Frattare, and M.
+     Robberto (STScI)\r\n\r\nAcknowledgement: R. Gendler\r\n\r\nMusic: “Dvorak – Serenade for Strings Op22 in E Major
+     larghetto”, performed by The Advent Chamber Orchestra, CC BY-SA',
+     'image': 'https://media.stsci.edu/uploads/video/image_attachment/1155/low_orion_vis_dome-example_frame-1920x1080.png',
+     'image_retina': 'https://media.stsci.edu/uploads/video/image_attachment/1155/orion_vis_dome-example_frame-1920x1080.png',
+     'mission': 'hubble',
+     'name': 'Flight Through the Orion Nebula in Visible Light - Dome Version',
+     'short_description': 'This visualization flies through the Orion Nebula using visible light, and is formatted for
+     planetarium hemispherical dome projection.',
+     'video_files': [{'file_size': 236467970,
+       'file_url': 'https://media.stsci.edu/uploads/video_file/video_attachment/4923/orion_vis-dome_030_preview-1920x1080p60.mp4',
+       'format': 'MPEG-4',
+       'frame_rate': '60.0',
+       'height': 1080,
+       'width': 1920},
+      {'file_size': 26355690,
+       'file_url': 'https://media.stsci.edu/uploads/video_file/video_attachment/4929/orion_vis_dome_030_v5-audio.wav',
+       'format': 'Other'},
+      {'file_size': 268725,
+       'file_url': 'https://media.stsci.edu/uploads/video_file/video_attachment/4933/orion_vis-credits-1920x1080.png',
+       'format': 'Other'}],
+     'youtube_id': 'FVhd-7D4T-M'}
 
     """
     endpoint = urljoin(api_url, 'video/')
@@ -441,15 +524,33 @@ def videos(video_id, return_type='json'):
 
 def glossary(page=None, return_type='json'):
     r"""
+    Returns glossary terms and definitions related to astronomical objects and phenomena.
 
     Parameters
     ----------
+    page : list, tuple, str, int, or None
+        The page number of the glossary to return. Can be a list or tuple of ints, a str or int, or None.
+        'all' returns all pages.
+    return_type : str, {'json', 'content', 'text'}
+        Specifies the return type of the results. Defaults to JSON.
 
     Returns
     -------
+    list
+        list of dicionaries containing the glossary terms and definitions.
 
     Examples
     --------
+    >>> hubblepy.glossary()[0:2]
+    [{'definition': 'A small solar system object composed mostly of rock. Many of these objects orbit the Sun between
+    Mars and Jupiter. Their sizes range anywhere from 33 feet (10 meters) in diameter to less than 620 miles (1,000
+    kilometers). The largest known asteroid, Ceres, has a diameter of 579 miles (926 kilometers).',
+      'name': 'Asteroid'},
+     {'definition': "A region of space containing a huge amount of mass compacted into an extremely small volume. A
+     black hole's gravitational influence is so strong that nothing, not even light, can escape its grasp. Swirling
+     disks of material — called accretion disks — may surround black holes, and jets of matter may arise from their
+     vicinity.",
+      'name': 'Black Hole'}]
 
     """
     endpoint = urljoin(api_url, 'glossary')
@@ -472,15 +573,35 @@ def glossary(page=None, return_type='json'):
 
 def glossary_term(term, return_type='json'):
     r"""
+    Returns a specific glossary term and its definition.
 
     Parameters
     ----------
+    term : list, tuple, or str
+        List or tuple of str or str representing the glossary term(s) to return.
+    return_type : str, {'json', 'content', 'text'}
+        Specifies the return type of the results. Defaults to JSON.
 
     Returns
     -------
+    list or dict
+        If only one :code:`term` is passed, a dictionary containing the term and its definition is returned.
+        Otherwise, a list of dictionaries is returned with the same information.
 
     Examples
     --------
+    >>> hubblepy.glossary_term('asteroid')
+    {'definition': 'A small solar system object composed mostly of rock. Many of these objects orbit the Sun between
+    Mars and Jupiter. Their sizes range anywhere from 33 feet (10 meters) in diameter to less than 620 miles (1,000
+    kilometers). The largest known asteroid, Ceres, has a diameter of 579 miles (926 kilometers).'}
+    >>> hubblepy.glossary_term(['asteroid', 'planet'])
+    [{'definition': 'A small solar system object composed mostly of rock. Many of these objects orbit the Sun between
+    Mars and Jupiter. Their sizes range anywhere from 33 feet (10 meters) in diameter to less than 620 miles
+    (1,000 kilometers). The largest known asteroid, Ceres, has a diameter of 579 miles (926 kilometers).'},
+    {'definition': 'An object that orbits a star. Although smaller than stars, planets are relatively large and
+    shine only by reflected light. Planets are made up mostly of rock or gas, with a small, solid core. In our solar
+    system, the inner planets (Mercury, Venus, Earth, and Mars) are the rocky objects, and the outer planets (Jupiter,
+    Saturn, Uranus, and Neptune) are the gaseous ones.'}]
 
     """
     endpoint = urljoin(api_url, 'glossary/')
@@ -503,15 +624,43 @@ def glossary_term(term, return_type='json'):
 
 def rss(feed_name, page=None, sort='desc', return_type='json'):
     r"""
+    Returns metadata and other information on published RSS news feeds produced by various international space
+    agencies.
 
     Parameters
     ----------
+    feed_name : str
+        The name of the RSS feed to search
+    page : list, tuple, str, int, or None
+        The page number of the glossary to return. Can be a list or tuple of ints, a str or int, or None.
+        'all' returns all pages.
+    return_type : str, {'json', 'content', 'text'}
+        Specifies the return type of the results. Defaults to JSON.
+    sort : str, {'desc', 'asc'}
+        Determines the sorting order by publication date of the returned news feed posts. 'desc' sorts newer to older,
+        and 'asc' sorts older to newer.
 
     Returns
     -------
+    list
+        List of news posts metadata including the description, images, link, publication date and more.
 
     Examples
     --------
+    >>> hubblepy.rss('esa_feed')[0:1]
+    [{'description': 'The NASA/ESA Hubble Space Telescope has started a new mission to shed light on the evolution of
+    the earliest galaxies in the Universe. The BUFFALO survey will observe six massive galaxy clusters and their
+    surroundings. The first observations show the galaxy cluster Abell 370 and a host of magnified, gravitationally
+    lensed galaxies around it.',
+      'image': 'https://media.stsci.edu/uploads/feed_post/thumbnail/9629/heic1816a.jpg',
+      'image_square': 'https://media.stsci.edu/uploads/feed_post/thumbnail/9629/square_low_heic1816a.jpg',
+      'image_square_large': 'https://media.stsci.edu/uploads/feed_post/thumbnail/9629/square_heic1816a.jpg',
+      'link': 'http://www.spacetelescope.org/news/heic1816/',
+      'pub_date': '2018-09-13T11:00:00.000-04:00',
+      'thumbnail': 'https://media.stsci.edu/uploads/feed_post/thumbnail/9629/thumb_low_heic1816a.jpg',
+      'thumbnail_large': 'https://media.stsci.edu/uploads/feed_post/thumbnail/9629/thumb_heic1816a.jpg',
+      'title': 'Photo Release: BUFFALO charges towards the earliest galaxies'}]
+
     """
     endpoint = urljoin(api_url, 'external_feed/')
 
@@ -542,15 +691,65 @@ def rss(feed_name, page=None, sort='desc', return_type='json'):
 
 def rss_posts(feed_name, pub_date, return_type='json'):
     r"""
+    Returns individual RSS news feed posts for various international space agencies and organizations.
 
     Parameters
     ----------
+    feed_name : str
+        The name of the RSS feed to search
+    pub_date : list, tuple, or str
+        The publication date of the news feed post formatted as YYYY-MM-DDTHH:MM-SS.NNNN±HH:MM. Can be a list or
+        tuple of strings.
+    return_type : str, {'json', 'content', 'text'}
+        Specifies the return type of the results. Defaults to JSON.
 
     Returns
     -------
+    dict or list
+        If one publication date is passed in the :code:`pub_date` parameter, a dictionary containing the post
+        metadata is returned. Otherwise, a list of dictionaries is returned with the same information for each
+        respective post.
 
     Examples
     --------
+    >>> hubblepy.rss_posts('esa_feed', '2017-03-23T13:00:00.000-04:00')
+    {'description': 'An international team of astronomers using the NASA/ESA Hubble Space Telescope have uncovered a
+    supermassive black hole that has been propelled out of the centre of the distant galaxy 3C186. The black hole was
+    most likely ejected by the power of gravitational waves. This is the first time that astronomers found a
+    supermassive black hole at such a large distance from its host galaxy centre.',
+     'guid': 'http://www.spacetelescope.org/news/heic1706/',
+     'image': 'https://media.stsci.edu/uploads/feed_post/thumbnail/491/heic1706a.jpg',
+     'image_square': 'https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_low_heic1706a.jpg',
+     'image_square_large': 'https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_heic1706a.jpg',
+     'pub_date': '2017-03-23T13:00:00.000-04:00',
+     'thumbnail': 'https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_low_heic1706a.jpg',
+     'thumbnail_large': 'https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_heic1706a.jpg',
+     'title': 'Science Release: Hubble detects supermassive black hole kicked out of galactic core'}
+    >>> hubblepy.rss_posts('esa_feed', ['2017-03-23T13:00:00.000-04:00', '2018-09-13T11:00:00.000-04:00'])
+    [{'description': 'An international team of astronomers using the NASA/ESA Hubble Space Telescope have uncovered a
+    supermassive black hole that has been propelled out of the centre of the distant galaxy 3C186. The black hole was
+    most likely ejected by the power of gravitational waves. This is the first time that astronomers found a
+    supermassive black hole at such a large distance from its host galaxy centre.',
+      'guid': 'http://www.spacetelescope.org/news/heic1706/',
+      'image': 'https://media.stsci.edu/uploads/feed_post/thumbnail/491/heic1706a.jpg',
+      'image_square': 'https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_low_heic1706a.jpg',
+      'image_square_large': 'https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_heic1706a.jpg',
+      'pub_date': '2017-03-23T13:00:00.000-04:00',
+      'thumbnail': 'https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_low_heic1706a.jpg',
+      'thumbnail_large': 'https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_heic1706a.jpg',
+      'title': 'Science Release: Hubble detects supermassive black hole kicked out of galactic core'},
+     {'description': 'The NASA/ESA Hubble Space Telescope has started a new mission to shed light on the evolution of
+     the earliest galaxies in the Universe. The BUFFALO survey will observe six massive galaxy clusters and their
+     surroundings. The first observations show the galaxy cluster Abell 370 and a host of magnified, gravitationally
+     lensed galaxies around it.',
+      'guid': 'http://www.spacetelescope.org/news/heic1816/',
+      'image': 'https://media.stsci.edu/uploads/feed_post/thumbnail/9629/heic1816a.jpg',
+      'image_square': 'https://media.stsci.edu/uploads/feed_post/thumbnail/9629/square_low_heic1816a.jpg',
+      'image_square_large': 'https://media.stsci.edu/uploads/feed_post/thumbnail/9629/square_heic1816a.jpg',
+      'pub_date': '2018-09-13T11:00:00.000-04:00',
+      'thumbnail': 'https://media.stsci.edu/uploads/feed_post/thumbnail/9629/thumb_low_heic1816a.jpg',
+      'thumbnail_large': 'https://media.stsci.edu/uploads/feed_post/thumbnail/9629/thumb_heic1816a.jpg',
+      'title': 'Photo Release: BUFFALO charges towards the earliest galaxies'}]
 
     """
     endpoint = urljoin(api_url, 'external_feed/')
@@ -573,12 +772,7 @@ def rss_posts(feed_name, pub_date, return_type='json'):
 
 def _return_types(r, return_type):
     r"""
-
-    Parameters
-    ----------
-
-    Returns
-    -------
+    Internal function for coercing the content types of the returned request data.
 
     """
     if return_type == 'json':
