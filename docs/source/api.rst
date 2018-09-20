@@ -1,7 +1,7 @@
 
 .. _api:
 
-.. currentmodule:: hubblepy
+.. currentmodule:: hubblepy.api
 
 API Reference
 =============
