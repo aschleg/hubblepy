@@ -1,0 +1,148 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>hubblepy.rss &#8212; hubblepy 1.0.0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="hubblepy.rss_posts" href="hubblepy.rss_posts.html" />
+    <link rel="prev" title="hubblepy.glossary_term" href="hubblepy.glossary_term.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="hubblepy.rss_posts.html" title="hubblepy.rss_posts"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="hubblepy.glossary_term.html" title="hubblepy.glossary_term"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">hubblepy 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../api.html" accesskey="U">API Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="hubblepy-rss">
+<h1>hubblepy.rss<a class="headerlink" href="#hubblepy-rss" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="hubblepy.rss">
+<code class="descclassname">hubblepy.</code><code class="descname">rss</code><span class="sig-paren">(</span><em>feed_name</em>, <em>page=None</em>, <em>sort='desc'</em>, <em>return_type='json'</em><span class="sig-paren">)</span><a class="headerlink" href="#hubblepy.rss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns metadata and other information on published RSS news feeds produced by various international space
+agencies.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>feed_name</strong> (<em>str</em>) – The name of the RSS feed to search</li>
+<li><strong>page</strong> (<em>list</em><em>, </em><em>tuple</em><em>, </em><em>str</em><em>, </em><em>int</em><em>, or </em><em>None</em>) – The page number of the glossary to return. Can be a list or tuple of ints, a str or int, or None.
+‘all’ returns all pages.</li>
+<li><strong>return_type</strong> (<em>str</em><em>, </em><em>{'json'</em><em>, </em><em>'content'</em><em>, </em><em>'text'}</em>) – Specifies the return type of the results. Defaults to JSON.</li>
+<li><strong>sort</strong> (<em>str</em><em>, </em><em>{'desc'</em><em>, </em><em>'asc'}</em>) – Determines the sorting order by publication date of the returned news feed posts. ‘desc’ sorts newer to older,
+and ‘asc’ sorts older to newer.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of news posts metadata including the description, images, link, publication date and more.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">rss</span><span class="p">(</span><span class="s1">&#39;esa_feed&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>
+<span class="go">[{&#39;description&#39;: &#39;The NASA/ESA Hubble Space Telescope has started a new mission to shed light on the evolution of</span>
+<span class="go">the earliest galaxies in the Universe. The BUFFALO survey will observe six massive galaxy clusters and their</span>
+<span class="go">surroundings. The first observations show the galaxy cluster Abell 370 and a host of magnified, gravitationally</span>
+<span class="go">lensed galaxies around it.&#39;,</span>
+<span class="go">  &#39;image&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;image_square&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/square_low_heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;image_square_large&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/square_heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;link&#39;: &#39;http://www.spacetelescope.org/news/heic1816/&#39;,</span>
+<span class="go">  &#39;pub_date&#39;: &#39;2018-09-13T11:00:00.000-04:00&#39;,</span>
+<span class="go">  &#39;thumbnail&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/thumb_low_heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;thumbnail_large&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/thumb_heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;title&#39;: &#39;Photo Release: BUFFALO charges towards the earliest galaxies&#39;}]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="hubblepy.glossary_term.html"
+                        title="previous chapter">hubblepy.glossary_term</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="hubblepy.rss_posts.html"
+                        title="next chapter">hubblepy.rss_posts</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/generated/hubblepy.rss.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="hubblepy.rss_posts.html" title="hubblepy.rss_posts"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="hubblepy.glossary_term.html" title="hubblepy.glossary_term"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">hubblepy 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../api.html" >API Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Aaron Schlegel.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.
+    </div>
+  </body>
+</html>
