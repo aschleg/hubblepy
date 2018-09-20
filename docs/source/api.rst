@@ -6,16 +6,13 @@
 API Reference
 =============
 
-.. autosummary::
-    :toctree: generated/
-
-    news
-    news_release
-    image_collections
-    images
-    video_collections
-    videos
-    glossary
-    glossary_term
-    rss
-    rss_posts
+.. autofunction:: news
+.. autofunction:: news_release
+.. autofunction:: image_collections
+.. autofunction:: images
+.. autofunction:: video_collections
+.. autofunction:: videos
+.. autofunction:: glossary
+.. autofunction:: glossary_term
+.. autofunction:: rss
+.. autofunction:: rss_posts

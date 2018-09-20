@@ -15,7 +15,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="hubblepy.api.news" href="generated/hubblepy.api.news.html" />
+    <link rel="next" title="Version History" href="versions.html" />
     <link rel="prev" title="Hubblepy - Python API Wrapper of the HubbleSite API" href="index.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -25,7 +25,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="generated/hubblepy.api.news.html" title="hubblepy.api.news"
+          <a href="versions.html" title="Version History"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="index.html" title="Hubblepy - Python API Wrapper of the HubbleSite API"
@@ -41,44 +41,643 @@
             
   <div class="section" id="api-reference">
 <span id="api"></span><h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h1>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
+<dl class="function">
+<dt id="hubblepy.api.news">
+<code class="descclassname">hubblepy.api.</code><code class="descname">news</code><span class="sig-paren">(</span><em>page=None</em>, <em>return_type='json'</em><span class="sig-paren">)</span><a class="headerlink" href="#hubblepy.api.news" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns metadata including the id, name and url of published releases produced by the Office of Public Outreach
+of the Space Telescope Science Institute. Each result set (page) contains 25 items (if available).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="generated/hubblepy.api.news.html#hubblepy.api.news" title="hubblepy.api.news"><code class="xref py py-obj docutils literal notranslate"><span class="pre">news</span></code></a>([page,&nbsp;return_type])</td>
-<td>Returns metadata including the id, name and url of published releases produced by the Office of Public Outreach of the Space Telescope Science Institute.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>page</strong> (<em>list</em><em>, </em><em>tuple</em><em>, </em><em>str</em><em>, </em><em>int</em><em>, or </em><em>None</em>) – The page number of the published releases to return. Can be a list or tuple of ints, a str or int, or None.
+‘all’ returns all pages.</li>
+<li><strong>return_type</strong> (<em>str</em><em>, </em><em>{'json'</em><em>, </em><em>'content'</em><em>, </em><em>'text'}</em>) – Specifies the return type of the results. Defaults to JSON.</li>
+</ul>
+</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/hubblepy.api.news_release.html#hubblepy.api.news_release" title="hubblepy.api.news_release"><code class="xref py py-obj docutils literal notranslate"><span class="pre">news_release</span></code></a>(which[,&nbsp;return_type])</td>
-<td>Returns more detailed metadata including the abstract, image thumbnails, and more, of a published release.</td>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of results.</p>
+</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/hubblepy.api.image_collections.html#hubblepy.api.image_collections" title="hubblepy.api.image_collections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">image_collections</span></code></a>([page,&nbsp;collection_name,&nbsp;…])</td>
-<td>Returns metadata including the id, name, name of the associated news release, collection and mission of images from different collections available on the HubbleSite.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/hubblepy.api.images.html#hubblepy.api.images" title="hubblepy.api.images"><code class="xref py py-obj docutils literal notranslate"><span class="pre">images</span></code></a>(image_id[,&nbsp;return_type])</td>
-<td>Returns more specific metadata of available images including the description, credits, the location of the image files and more.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/hubblepy.api.video_collections.html#hubblepy.api.video_collections" title="hubblepy.api.video_collections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">video_collections</span></code></a>([page,&nbsp;collection_name,&nbsp;…])</td>
-<td>Returns metadata of published videos available on the HubbleSite including the video id, name, image, and the associated collection and mission.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/hubblepy.api.videos.html#hubblepy.api.videos" title="hubblepy.api.videos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">videos</span></code></a>(video_id[,&nbsp;return_type])</td>
-<td>Returns more specific metadata and information on published videos available on the HubbleSite.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/hubblepy.api.glossary.html#hubblepy.api.glossary" title="hubblepy.api.glossary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">glossary</span></code></a>([page,&nbsp;return_type])</td>
-<td>Returns glossary terms and definitions related to astronomical objects and phenomena.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/hubblepy.api.glossary_term.html#hubblepy.api.glossary_term" title="hubblepy.api.glossary_term"><code class="xref py py-obj docutils literal notranslate"><span class="pre">glossary_term</span></code></a>(term[,&nbsp;return_type])</td>
-<td>Returns a specific glossary term and its definition.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/hubblepy.api.rss.html#hubblepy.api.rss" title="hubblepy.api.rss"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rss</span></code></a>(feed_name[,&nbsp;page,&nbsp;sort,&nbsp;return_type])</td>
-<td>Returns metadata and other information on published RSS news feeds produced by various international space agencies.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/hubblepy.api.rss_posts.html#hubblepy.api.rss_posts" title="hubblepy.api.rss_posts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rss_posts</span></code></a>(feed_name,&nbsp;pub_date[,&nbsp;return_type])</td>
-<td>Returns individual RSS news feed posts for various international space agencies and organizations.</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
 </tr>
 </tbody>
 </table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p1</span> <span class="o">=</span> <span class="n">hubblepy</span><span class="o">.</span><span class="n">news</span><span class="p">()</span>
+<span class="go">[{&#39;name&#39;: &#39;Hubble Uncovers Never Before Seen Features Around a Neutron Star&#39;,</span>
+<span class="go">  &#39;news_id&#39;: &#39;2018-43&#39;,</span>
+<span class="go">  &#39;url&#39;: &#39;http://hubblesite.org/news_release/news/2018-43&#39;},</span>
+<span class="go"> {&#39;name&#39;: &#39;Hubble Goes Wide to Seek Out Far-Flung Galaxies&#39;,</span>
+<span class="go">  &#39;news_id&#39;: &#39;2018-39&#39;,</span>
+<span class="go">  &#39;url&#39;: &#39;http://hubblesite.org/news_release/news/2018-39&#39;},</span>
+<span class="go"> {&#39;name&#39;: &quot;Success in Critical Communications Tests for NASA&#39;s James Webb Space Telescope&quot;,</span>
+<span class="go">  &#39;news_id&#39;: &#39;2018-31&#39;,</span>
+<span class="go">  &#39;url&#39;: &#39;http://webbtelescope.org/articles/2018-31&#39;},</span>
+<span class="go"> {&#39;name&#39;: &#39;Retiring Hubble Visualization Expert Blended the Best of Science and Art&#39;,</span>
+<span class="go">  &#39;news_id&#39;: &#39;2018-41&#39;,</span>
+<span class="go">  ...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p2</span> <span class="o">=</span> <span class="n">hubblepy</span><span class="o">.</span><span class="n">news</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="go">[{&#39;name&#39;: &quot;Space Telescope Science Institute to Host Data from World&#39;s Largest Digital Sky Survey&quot;,</span>
+<span class="go">  &#39;news_id&#39;: &#39;2016-41&#39;,</span>
+<span class="go">  &#39;url&#39;: &#39;http://hubblesite.org/news_release/news/2016-41&#39;},</span>
+<span class="go"> {&#39;name&#39;: &#39;STScI Astronomers Nancy Levenson and David Soderblom Elected AAAS Fellows&#39;,</span>
+<span class="go">  &#39;news_id&#39;: &#39;2016-46&#39;,</span>
+<span class="go">  &#39;url&#39;: &#39;http://hubblesite.org/news_release/news/2016-46&#39;},</span>
+<span class="go"> {&#39;name&#39;: &#39;Dr. Laurent Pueyo Receives 2016 Outstanding Young Scientist Award&#39;,</span>
+<span class="go">  &#39;news_id&#39;: &#39;2016-40&#39;,</span>
+<span class="go">  &#39;url&#39;: &#39;http://hubblesite.org/news_release/news/2016-40&#39;},</span>
+<span class="go"> {&#39;name&#39;: &quot;A Death Star&#39;s Ghostly Glow&quot;,</span>
+<span class="go">  &#39;news_id&#39;: &#39;2016-37&#39;,</span>
+<span class="go">  ...]</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<p>The news releases are sorted by publication date and time. All the returned results can also be found on the
+HubbleSite’s news center, <a class="reference external" href="http://hubblesite.org/news">http://hubblesite.org/news</a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="hubblepy.api.news_release">
+<code class="descclassname">hubblepy.api.</code><code class="descname">news_release</code><span class="sig-paren">(</span><em>which</em>, <em>return_type='json'</em><span class="sig-paren">)</span><a class="headerlink" href="#hubblepy.api.news_release" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns more detailed metadata including the abstract, image thumbnails, and more, of a published release.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>which</strong> (<em>list</em><em>, </em><em>tuple</em><em>, </em><em>str</em>) – Specifies which news release content to return. Possible values include ‘last’ for the last news release
+published, ‘first’, which returns the first published release, and the release identifier in the format
+YYYY-NN.</li>
+<li><strong>return_type</strong> (<em>str</em><em>, </em><em>{'json'</em><em>, </em><em>'content'</em><em>, </em><em>'text'}</em>) – Specifies the return type of the results. Defaults to JSON.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The returned results.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict or list</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">news_release</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;last&#39;</span><span class="p">)</span>
+<span class="go">{&#39;abstract&#39;: &#39;Imagine crushing more than 50,000 aircraft carriers into the size of a baseball. This describes</span>
+<span class="go">neutron stars. They are among the strangest objects in the universe. Neutron stars are a case of extreme physics</span>
+<span class="go">produced by the unforgiving force of gravity. The entire core of an exploded star has been squeezed into a solid</span>
+<span class="go">ball of neutrons with the density of an atom’s nucleus. Neutron stars spin as fast as a blender on puree. Some</span>
+<span class="go">spit out death-star beams of intense radiation — like interstellar lighthouses.</span>
+<span class="go">These are called pulsars.\r\n\r\nThese beams are normally seen in X-rays, gamma-rays, and radio waves.</span>
+<span class="go">But astronomers used Hubble\&#39;s near-infrared (IR) vision to look at a nearby neutron star cataloged RX J0806.4-4123.</span>
+<span class="go">They were surprised to see a gush of IR light coming from a region around the neutron star. That infrared light</span>
+<span class="go">might come from a circumstellar disk 18 billion miles across. Another idea is that a wind of subatomic particles</span>
+<span class="go">from the pulsar’s magnetic field is slamming into interstellar gas. Hubble\&#39;s IR vision opens a new window into</span>
+<span class="go">understanding how these &quot;infernal machines&quot; work.\r\n&#39;,</span>
+<span class="go"> &#39;credits&#39;: &#39;&lt;a href=&quot;http://www.nasa.gov&quot;&gt;NASA&lt;/a&gt;, &lt;a href=&quot;http://www.spacetelescope.org&quot;&gt;ESA&lt;/a&gt;, and B.</span>
+<span class="go"> Posselt (Pennsylania State University)&#39;,</span>
+<span class="go"> &#39;keystone_image_1x&#39;: &#39;https://media.stsci.edu/uploads/story/display_image/1243/low_STSCI-H-p1843a-k-1340x520.png&#39;,</span>
+<span class="go"> &#39;keystone_image_2x&#39;: &#39;https://media.stsci.edu/uploads/story/display_image/1243/STSCI-H-p1843a-k-1340x520.png&#39;,</span>
+<span class="go"> &#39;mission&#39;: &#39;hubble&#39;,</span>
+<span class="go"> &#39;name&#39;: &#39;Hubble Uncovers Never Before Seen Features Around a Neutron Star&#39;,</span>
+<span class="go"> &#39;news_id&#39;: &#39;2018-43&#39;,</span>
+<span class="go"> &#39;publication&#39;: &#39;2018-09-17T11:00:00.000-04:00&#39;,</span>
+<span class="go"> &#39;release_images&#39;: [4231, 4232, 4233],</span>
+<span class="go"> &#39;thumbnail&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1243/low_STSCI-H-p1843a-t-400x400.png&#39;,</span>
+<span class="go"> &#39;thumbnail_1x&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1243/low_STSCI-H-p1843a-t-400x400.png&#39;,</span>
+<span class="go"> &#39;thumbnail_2x&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1243/STSCI-H-p1843a-t-400x400.png&#39;,</span>
+<span class="go"> &#39;thumbnail_retina&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1243/STSCI-H-p1843a-t-400x400.png&#39;,</span>
+<span class="go"> &#39;url&#39;: &#39;http://hubblesite.org/news_release/news/2018-43&#39;}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">news_release</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;last&#39;</span><span class="p">,</span> <span class="s1">&#39;first&#39;</span><span class="p">,</span> <span class="s1">&#39;2016-24&#39;</span><span class="p">])</span>
+<span class="go">[{&#39;abstract&#39;: &#39;Imagine crushing more than 50,000 aircraft carriers into the size of a baseball. This describes</span>
+<span class="go">neutron stars. They are among the strangest objects in the universe. Neutron stars are a case of extreme physics</span>
+<span class="go">produced by the unforgiving force of gravity. The entire core of an exploded star has been squeezed into a solid</span>
+<span class="go">ball of neutrons with the density of an atom’s nucleus. Neutron stars spin as fast as a blender on puree.</span>
+<span class="go">Some spit out death-star beams of intense radiation — like interstellar lighthouses. These are called</span>
+<span class="go">pulsars.\r\n\r\nThese beams are normally seen in X-rays, gamma-rays, and radio waves. But astronomers used</span>
+<span class="go">Hubble\&#39;s near-infrared (IR) vision to look at a nearby neutron star cataloged RX J0806.4-4123. They were</span>
+<span class="go">surprised to see a gush of IR light coming from a region around the neutron star. That infrared light might</span>
+<span class="go">come from a circumstellar disk 18 billion miles across. Another idea is that a wind of subatomic particles from</span>
+<span class="go">the pulsar’s magnetic field is slamming into interstellar gas. Hubble\&#39;s IR vision opens a new window into</span>
+<span class="go">understanding how these &quot;infernal machines&quot; work.\r\n&#39;,</span>
+<span class="go">  &#39;credits&#39;: &#39;&lt;a href=&quot;http://www.nasa.gov&quot;&gt;NASA&lt;/a&gt;, &lt;a href=&quot;http://www.spacetelescope.org&quot;&gt;ESA&lt;/a&gt;, and B.</span>
+<span class="go">  Posselt (Pennsylania State University)&#39;,</span>
+<span class="go">  &#39;keystone_image_1x&#39;: &#39;https://media.stsci.edu/uploads/story/display_image/1243/low_STSCI-H-p1843a-k-1340x520.png&#39;,</span>
+<span class="go">  &#39;keystone_image_2x&#39;: &#39;https://media.stsci.edu/uploads/story/display_image/1243/STSCI-H-p1843a-k-1340x520.png&#39;,</span>
+<span class="go">  &#39;mission&#39;: &#39;hubble&#39;,</span>
+<span class="go">  &#39;name&#39;: &#39;Hubble Uncovers Never Before Seen Features Around a Neutron Star&#39;,</span>
+<span class="go">  &#39;news_id&#39;: &#39;2018-43&#39;,</span>
+<span class="go">  &#39;publication&#39;: &#39;2018-09-17T11:00:00.000-04:00&#39;,</span>
+<span class="go">  &#39;release_images&#39;: [4231, 4232, 4233],</span>
+<span class="go">  &#39;thumbnail&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1243/low_STSCI-H-p1843a-t-400x400.png&#39;,</span>
+<span class="go">  &#39;thumbnail_1x&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1243/low_STSCI-H-p1843a-t-400x400.png&#39;,</span>
+<span class="go">  &#39;thumbnail_2x&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1243/STSCI-H-p1843a-t-400x400.png&#39;,</span>
+<span class="go">  &#39;thumbnail_retina&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1243/STSCI-H-p1843a-t-400x400.png&#39;,</span>
+<span class="go">  &#39;url&#39;: &#39;http://hubblesite.org/news_release/news/2018-43&#39;},</span>
+<span class="go"> {&#39;abstract&#39;: &quot;On the right is part of the first image taken with NASA&#39;s Hubble Space Telescope&#39;s (HST)</span>
+<span class="go"> Wide Field/Planetary Camera. It is shown with a ground-based picture from a Las Campanas, Chile, observatory</span>
+<span class="go"> of the same region of the sky. The Las Campanas picture was taken with a 100-inch telescope and it is typical of</span>
+<span class="go"> high-quality pictures obtained from the ground. All objects seen are stars within the Milky Way galaxy.&quot;,</span>
+<span class="go">  &#39;credits&#39;: &#39;Credit: &lt;a href=&quot;http://www.nasa.gov/&quot;&gt;NASA&lt;/a&gt;, &lt;a href=&quot;http://www.spacetelescope.org/&quot;&gt;ESA&lt;/a&gt;,</span>
+<span class="go">  and &lt;a href=&quot;http://www.stsci.edu/&quot;&gt;STScI&lt;/a&gt;&#39;,</span>
+<span class="go">  &#39;mission&#39;: &#39;hubble&#39;,</span>
+<span class="go">  &#39;name&#39;: &#39;HST WC/PC First Light Image&#39;,</span>
+<span class="go">  &#39;news_id&#39;: &#39;1990-04&#39;,</span>
+<span class="go">  &#39;publication&#39;: &#39;1990-05-20T00:00:00.000-04:00&#39;,</span>
+<span class="go">  &#39;release_images&#39;: [1],</span>
+<span class="go">  &#39;thumbnail&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1/low_small_web.jpg&#39;,</span>
+<span class="go">  &#39;thumbnail_1x&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1/low_small_web.jpg&#39;,</span>
+<span class="go">  &#39;thumbnail_2x&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1/small_web.jpg&#39;,</span>
+<span class="go">  &#39;thumbnail_retina&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1/small_web.jpg&#39;,</span>
+<span class="go">  &#39;url&#39;: &#39;http://hubblesite.org/news_release/news/1990-04&#39;},</span>
+<span class="go"> {&#39;abstract&#39;: &quot;Astronomers are using NASA&#39;s Hubble Space Telescope to study auroras — stunning light shows in a</span>
+<span class="go"> planet&#39;s atmosphere — on the poles of the largest planet in the solar system, Jupiter. The auroras were</span>
+<span class="go"> photographed during a series of Hubble Space Telescope Imaging Spectrograph far-ultraviolet-light observations</span>
+<span class="go"> taking place as NASA&#39;s Juno spacecraft approaches and enters into orbit around Jupiter. The aim of the program</span>
+<span class="go"> is to determine how Jupiter&#39;s auroras respond to changing conditions in the solar wind, a stream of charged</span>
+<span class="go"> particles emitted from the sun. Auroras are formed when charged particles in the space surrounding the planet</span>
+<span class="go"> are accelerated to high energies along the planet&#39;s magnetic field. When the particles hit the atmosphere near</span>
+<span class="go"> the magnetic poles, they cause it to glow like gases in a fluorescent light fixture. Jupiter&#39;s magnetosphere is</span>
+<span class="go"> 20,000 times stronger than Earth&#39;s. These observations will reveal how the solar system&#39;s largest and most</span>
+<span class="go"> powerful magnetosphere behaves.\r\n\r\nThe full-color disk of Jupiter in this image was separately photographed</span>
+<span class="go"> at a different time by Hubble&#39;s Outer Planet Atmospheres Legacy (OPAL) program, a long-term Hubble project that</span>
+<span class="go"> annually captures global maps of the outer planets.&quot;,</span>
+<span class="go">  &#39;credits&#39;: &#39;Credit: &lt;a href=&quot;http://www.nasa.gov/&quot;&gt;NASA&lt;/a&gt;, &lt;a href=&quot;http://www.spacetelescope.org/&quot;&gt;ESA&lt;/a&gt;,</span>
+<span class="go">  and J. Nichols (University of Leicester)\r\n\r\nAcknowledgment:</span>
+<span class="go">  A. Simon (&lt;a href=&quot;http://www.nasa.gov/&quot;&gt;NASA&lt;/a&gt;/GSFC) and the OPAL team&#39;,</span>
+<span class="go">  &#39;keystone_image_1x&#39;: &#39;https://media.stsci.edu/uploads/story/display_image/1144/low_keystone.png&#39;,</span>
+<span class="go">  &#39;keystone_image_2x&#39;: &#39;https://media.stsci.edu/uploads/story/display_image/1144/keystone.png&#39;,</span>
+<span class="go">  &#39;mission&#39;: &#39;hubble&#39;,</span>
+<span class="go">  &#39;name&#39;: &quot;Hubble Captures Vivid Auroras in Jupiter&#39;s Atmosphere&quot;,</span>
+<span class="go">  &#39;news_id&#39;: &#39;2016-24&#39;,</span>
+<span class="go">  &#39;publication&#39;: &#39;2016-06-30T10:00:00.000-04:00&#39;,</span>
+<span class="go">  &#39;release_images&#39;: [3756, 3758, 3757],</span>
+<span class="go">  &#39;release_videos&#39;: [865, 867, 866, 868],</span>
+<span class="go">  &#39;thumbnail&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1144/low_web.jpg&#39;,</span>
+<span class="go">  &#39;thumbnail_1x&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1144/low_web.jpg&#39;,</span>
+<span class="go">  &#39;thumbnail_2x&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1144/web.jpg&#39;,</span>
+<span class="go">  &#39;thumbnail_retina&#39;: &#39;https://media.stsci.edu/uploads/story/thumbnail/1144/web.jpg&#39;,</span>
+<span class="go">  &#39;url&#39;: &#39;http://hubblesite.org/news_release/news/2016-24&#39;}]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="hubblepy.api.image_collections">
+<code class="descclassname">hubblepy.api.</code><code class="descname">image_collections</code><span class="sig-paren">(</span><em>page=None</em>, <em>collection_name=None</em>, <em>return_type='json'</em><span class="sig-paren">)</span><a class="headerlink" href="#hubblepy.api.image_collections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns metadata including the id, name, name of the associated news release, collection and mission of images
+from different collections available on the HubbleSite.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>page</strong> (<em>list</em><em>, </em><em>tuple</em><em>, </em><em>str</em><em>, </em><em>int</em><em>, or </em><em>None</em>) – The page number of the published images to return. Can be a list or tuple of ints, a str or int, or None.
+‘all’ returns all pages.</li>
+<li><strong>collection_name</strong> (<em>list</em><em>, </em><em>str</em><em>, or </em><em>None</em>) – The name of the collection to return images. Collections are sets of images such as ‘news’, ‘spacecraft’,
+etc. If ‘all’, returns all images from all collections.</li>
+<li><strong>return_type</strong> (<em>str</em><em>, </em><em>{'json'</em><em>, </em><em>'content'</em><em>, </em><em>'text'}</em>) – Specifies the return type of the results. Defaults to JSON.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of results</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">image_collections</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;spacecraft&#39;</span><span class="p">)</span>
+<span class="go">[{&#39;id&#39;: 3814, &#39;name&#39;: &#39;Grappling Hubble (2009)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3813, &#39;name&#39;: &#39;Bidding Hubble Farewell (2009)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3812, &#39;name&#39;: &#39;Hubble From Behind (2009)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3811, &#39;name&#39;: &#39;Installing Wide Field Camera 3 (2009)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3810, &#39;name&#39;: &#39;Final Release Over Earth (2009)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3809, &#39;name&#39;: &#39;Reflecting on Work (2009)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3808, &#39;name&#39;: &quot;In a Day&#39;s Work (2009)&quot;},</span>
+<span class="go"> {&#39;id&#39;: 3807, &#39;name&#39;: &#39;Going Up? (2009)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3806, &#39;name&#39;: &#39;Getting in Position (2009)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3805, &#39;name&#39;: &#39;Hanging Out With Hubble (2009)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3804, &#39;name&#39;: &quot;Lifting Hubble from Atlantis&#39; Cargo Bay (2009)&quot;},</span>
+<span class="go"> {&#39;id&#39;: 3836,</span>
+<span class="go">  &#39;name&#39;: &#39;Hubble Control Center, Goddard Space Flight Center (1999)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3835,</span>
+<span class="go">  &#39;name&#39;: &#39;Working at the Hubble Control Center, Space Telescope Science Institute (2005)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3834, &#39;name&#39;: &#39;Hubble in Flight (1997) &#39;},</span>
+<span class="go"> {&#39;id&#39;: 3833, &#39;name&#39;: &quot;Hubble Restored: The Telescope&#39;s Latest Look (2002)&quot;},</span>
+<span class="go"> {&#39;id&#39;: 3832, &#39;name&#39;: &#39;Hubble Floating Free (2002)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3831, &#39;name&#39;: &quot;Hubble Against Earth&#39;s Horizon (1997)&quot;},</span>
+<span class="go"> {&#39;id&#39;: 3830, &#39;name&#39;: &#39;Repairing Hubble (1997)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3829, &#39;name&#39;: &#39;Camera Crew: Taking Pictures of the Mission (1997)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3828, &#39;name&#39;: &#39;Hubble Docked with the Shuttle Endeavor (1993)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3827, &#39;name&#39;: &#39;Hubble Docked with Discovery (1999)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3826,</span>
+<span class="go">  &#39;name&#39;: &#39;Giving Guidance: Replacing the Fine Guidance Sensors (1997)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3825, &#39;name&#39;: &#39;Cast-off: Releasing a Solar Array (1993)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3824,</span>
+<span class="go">  &#39;name&#39;: &#39;Out with the Old: Replacing the High Resolution Spectrograph (1997)&#39;},</span>
+<span class="go"> {&#39;id&#39;: 3823,</span>
+<span class="go">  &#39;name&#39;: &#39;A Second Look: Replacing the Wide Field and Planetary Camera (1993)&#39;}]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="hubblepy.api.images">
+<code class="descclassname">hubblepy.api.</code><code class="descname">images</code><span class="sig-paren">(</span><em>image_id</em>, <em>return_type='json'</em><span class="sig-paren">)</span><a class="headerlink" href="#hubblepy.api.images" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns more specific metadata of available images including the description, credits, the location of the image
+files and more.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>image_id</strong> (<em>list</em><em>, </em><em>tuple</em><em>, </em><em>str</em><em>, </em><em>int</em>) – A list or tuple of str or int representing the image ids to return.</li>
+<li><strong>return_type</strong> (<em>str</em><em>, </em><em>{'json'</em><em>, </em><em>'content'</em><em>, </em><em>'text'}</em>) – Specifies the return type of the results. Defaults to JSON.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">If only one image_id is passed, a dictionary of the results is returned. Otherwise, a list of dictionaries
+containing the results is returned.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict or list</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">images</span><span class="p">(</span><span class="mi">3823</span><span class="p">)</span>
+<span class="go">{&#39;collection&#39;: &#39;spacecraft&#39;,</span>
+<span class="go"> &#39;credits&#39;: &#39;&lt;a href=&quot;http://www.nasa.gov&quot;&gt;NASA&lt;/a&gt;&#39;,</span>
+<span class="go"> &#39;description&#39;: &quot;Astronauts remove the Wide Field and Planetary Camera to replace it with its more powerful</span>
+<span class="go"> successor, Wide Field and Planetary Camera 2, during Hubble’s first servicing mission in 1993. The camera,</span>
+<span class="go"> shaped something like a grand piano, weighs 610 pounds (277 kg) on Earth, but nothing in space. It can detect</span>
+<span class="go"> stars a billion times fainter than the ones we can see with our eyes. Most of Hubble&#39;s most popular pictures</span>
+<span class="go"> have been taken with this second camera.&quot;,</span>
+<span class="go"> &#39;image_files&#39;: [{&#39;file_size&#39;: 112455,</span>
+<span class="go">   &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/image_file/image_attachment/29327/STScI-H-spacecraft15-title.pdf&#39;,</span>
+<span class="go">   &#39;height&#39;: 612,</span>
+<span class="go">   &#39;width&#39;: 792},</span>
+<span class="go">  {&#39;file_size&#39;: 335340,</span>
+<span class="go">   &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/image_file/image_attachment/29324/STScI-H-spacecraft15-3000x2016.jpg&#39;,</span>
+<span class="go">   &#39;height&#39;: 2016,</span>
+<span class="go">   &#39;width&#39;: 3000},</span>
+<span class="go">  {&#39;file_size&#39;: 18164836,</span>
+<span class="go">   &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/image_file/image_attachment/29325/STScI-H-spacecraft15-3000x2016.tif&#39;,</span>
+<span class="go">   &#39;height&#39;: 2016,</span>
+<span class="go">   &#39;width&#39;: 3000},</span>
+<span class="go">  {&#39;file_size&#39;: 619187,</span>
+<span class="go">   &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/image_file/image_attachment/29326/STScI-H-spacecraft15-title-3000x2400.jpg&#39;,</span>
+<span class="go">   &#39;height&#39;: 2400,</span>
+<span class="go">   &#39;width&#39;: 3000}],</span>
+<span class="go"> &#39;mission&#39;: &#39;hubble&#39;,</span>
+<span class="go"> &#39;name&#39;: &#39;A Second Look: Replacing the Wide Field and Planetary Camera (1993)&#39;}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">images</span><span class="p">([</span><span class="mi">3823</span><span class="p">,</span> <span class="mi">3834</span><span class="p">])</span>
+<span class="go">[{&#39;collection&#39;: &#39;spacecraft&#39;,</span>
+<span class="go">  &#39;credits&#39;: &#39;&lt;a href=&quot;http://www.nasa.gov&quot;&gt;NASA&lt;/a&gt;&#39;,</span>
+<span class="go">  &#39;description&#39;: &quot;Astronauts remove the Wide Field and Planetary Camera to replace it with its more powerful</span>
+<span class="go">  successor, Wide Field and Planetary Camera 2, during Hubble’s first servicing mission in 1993. The camera,</span>
+<span class="go">  shaped something like a grand piano, weighs 610 pounds (277 kg) on Earth, but nothing in space. It can detect</span>
+<span class="go">  stars a billion times fainter than the ones we can see with our eyes. Most of Hubble&#39;s most popular pictures</span>
+<span class="go">  have been taken with this second camera.&quot;,</span>
+<span class="go">  &#39;image_files&#39;: [{&#39;file_size&#39;: 112455,</span>
+<span class="go">    &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/image_file/image_attachment/29327/STScI-H-spacecraft15-title.pdf&#39;,</span>
+<span class="go">    &#39;height&#39;: 612,</span>
+<span class="go">    &#39;width&#39;: 792},</span>
+<span class="go">   {&#39;file_size&#39;: 335340,</span>
+<span class="go">    &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/image_file/image_attachment/29324/STScI-H-spacecraft15-3000x2016.jpg&#39;,</span>
+<span class="go">    &#39;height&#39;: 2016,</span>
+<span class="go">    &#39;width&#39;: 3000},</span>
+<span class="go">   {&#39;file_size&#39;: 18164836,</span>
+<span class="go">    &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/image_file/image_attachment/29325/STScI-H-spacecraft15-3000x2016.tif&#39;,</span>
+<span class="go">    &#39;height&#39;: 2016,</span>
+<span class="go">    &#39;width&#39;: 3000},</span>
+<span class="go">   {&#39;file_size&#39;: 619187,</span>
+<span class="go">    &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/image_file/image_attachment/29326/STScI-H-spacecraft15-title-3000x2400.jpg&#39;,</span>
+<span class="go">    &#39;height&#39;: 2400,</span>
+<span class="go">    &#39;width&#39;: 3000}],</span>
+<span class="go">  &#39;mission&#39;: &#39;hubble&#39;,</span>
+<span class="go">  &#39;name&#39;: &#39;A Second Look: Replacing the Wide Field and Planetary Camera (1993)&#39;},</span>
+<span class="go"> {&#39;collection&#39;: &#39;spacecraft&#39;,</span>
+<span class="go">  &#39;credits&#39;: &#39;&lt;a href=&quot;http://www.nasa.gov&quot;&gt;NASA&lt;/a&gt;&#39;,</span>
+<span class="go">  &#39;description&#39;: &quot;The Hubble Space Telescope drifts through space in this picture, taken by Space Shuttle Discovery</span>
+<span class="go">  during Hubble&#39;s second servicing mission in 1997. The 10-foot aperture door, open to admit light, closes to</span>
+<span class="go">  block out space debris. The observatory&#39;s solar panels and foil-like thermal blankets are clearly visible.</span>
+<span class="go">  The solar panels provide power, while the thermal blankets protect Hubble from the extreme temperatures of</span>
+<span class="go">  space.&quot;,</span>
+<span class="go">  &#39;image_files&#39;: [{&#39;file_size&#39;: 80695,</span>
+<span class="go">    &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/image_file/image_attachment/29371/STScI-H-spacecraft03-title.pdf&#39;,</span>
+<span class="go">    &#39;height&#39;: 612,</span>
+<span class="go">    &#39;width&#39;: 792},</span>
+<span class="go">   {&#39;file_size&#39;: 1186774,</span>
+<span class="go">    &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/image_file/image_attachment/29368/STScI-H-spacecraft03-1500x1500.jpg&#39;,</span>
+<span class="go">    &#39;height&#39;: 1500,</span>
+<span class="go">    &#39;width&#39;: 1500},</span>
+<span class="go">   {&#39;file_size&#39;: 6771696,</span>
+<span class="go">    &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/image_file/image_attachment/29369/STScI-H-spacecraft03-1500x1500.tif&#39;,</span>
+<span class="go">    &#39;height&#39;: 1500,</span>
+<span class="go">    &#39;width&#39;: 1500},</span>
+<span class="go">   {&#39;file_size&#39;: 649084,</span>
+<span class="go">    &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/image_file/image_attachment/29370/STScI-H-spacecraft03-title-3000x2400.jpg&#39;,</span>
+<span class="go">    &#39;height&#39;: 2400,</span>
+<span class="go">    &#39;width&#39;: 3000}],</span>
+<span class="go">  &#39;mission&#39;: &#39;hubble&#39;,</span>
+<span class="go">  &#39;name&#39;: &#39;Hubble in Flight (1997) &#39;}]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="hubblepy.api.video_collections">
+<code class="descclassname">hubblepy.api.</code><code class="descname">video_collections</code><span class="sig-paren">(</span><em>page=None</em>, <em>collection_name=None</em>, <em>return_type='json'</em><span class="sig-paren">)</span><a class="headerlink" href="#hubblepy.api.video_collections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns metadata of published videos available on the HubbleSite including the video id, name, image,
+and the associated collection and mission.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>page</strong> (<em>list</em><em>, </em><em>tuple</em><em>, </em><em>str</em><em>, </em><em>int</em><em>, or </em><em>None</em>) – The page number of the published videos to return. Can be a list or tuple of ints, a str or int, or None.
+‘all’ returns all pages.</li>
+<li><strong>collection_name</strong> (<em>list</em><em>, </em><em>str</em><em>, or </em><em>None</em>) – The name of the collection to return. Collections are sets of videos such as ‘news’, ‘spacecraft’,
+etc. If ‘all’, returns all images from all collections.</li>
+<li><strong>return_type</strong> (<em>str</em><em>, </em><em>{'json'</em><em>, </em><em>'content'</em><em>, </em><em>'text'}</em>) – Specifies the return type of the results. Defaults to JSON.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of results.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">video_collections</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;space&#39;</span><span class="p">)</span>
+<span class="go">[{&#39;id&#39;: 1046,</span>
+<span class="go">  &#39;image&#39;: &#39;https://media.stsci.edu/uploads/video/image_attachment/1046/thumb_low_STScI-H-MWC_t420x236.png&#39;,</span>
+<span class="go">  &#39;name&#39;: &#39;Milky Way Center in Multiple Wavelengths&#39;},</span>
+<span class="go"> {&#39;id&#39;: 1141,</span>
+<span class="go">  &#39;image&#39;: &#39;https://media.stsci.edu/uploads/video/image_attachment/1141/thumb_low_arp273-example_frame-1920x1080.jpg&#39;,</span>
+<span class="go">  &#39;name&#39;: &#39;A Rose of Galaxies: Interacting Galaxies Arp 273&#39;},</span>
+<span class="go"> {&#39;id&#39;: 1155,</span>
+<span class="go">  &#39;image&#39;: &#39;https://media.stsci.edu/uploads/video/image_attachment/1155/thumb_low_orion_vis_dome-example_frame-1920x1080.png&#39;,</span>
+<span class="go">  &#39;name&#39;: &#39;Flight Through the Orion Nebula in Visible Light - Dome Version&#39;},</span>
+<span class="go">  ...]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="hubblepy.api.videos">
+<code class="descclassname">hubblepy.api.</code><code class="descname">videos</code><span class="sig-paren">(</span><em>video_id</em>, <em>return_type='json'</em><span class="sig-paren">)</span><a class="headerlink" href="#hubblepy.api.videos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns more specific metadata and information on published videos available on the HubbleSite.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>video_id</strong> (<em>list</em><em>, </em><em>tuple</em><em>, </em><em>int</em><em> or </em><em>str</em>) – The ID of the video to return. Can be a list or tuple of ints or strings, or just a single int or str.</li>
+<li><strong>return_type</strong> (<em>str</em><em>, </em><em>{'json'</em><em>, </em><em>'content'</em><em>, </em><em>'text'}</em>) – Specifies the return type of the results. Defaults to JSON.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">If only one video ID is passed, a dictionary of the metadata is returned. Otherwise, a list of dictionaries
+is returned.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict or list</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">videos</span><span class="p">(</span><span class="mi">1155</span><span class="p">)</span>
+<span class="go">{&#39;collection&#39;: &#39;science&#39;,</span>
+<span class="go"> &#39;credits&#39;: &#39;Credits: NASA, ESA, F. Summers, G. Bacon, Z. Levay, J. DePasquale, L. Hustak, L. Frattare, and M.</span>
+<span class="go"> Robberto (STScI)\r\n\r\nAcknowledgement: R. Gendler\r\n\r\nMusic: “Dvorak – Serenade for Strings Op22 in E Major</span>
+<span class="go"> larghetto”, performed by The Advent Chamber Orchestra, CC BY-SA&#39;,</span>
+<span class="go"> &#39;image&#39;: &#39;https://media.stsci.edu/uploads/video/image_attachment/1155/low_orion_vis_dome-example_frame-1920x1080.png&#39;,</span>
+<span class="go"> &#39;image_retina&#39;: &#39;https://media.stsci.edu/uploads/video/image_attachment/1155/orion_vis_dome-example_frame-1920x1080.png&#39;,</span>
+<span class="go"> &#39;mission&#39;: &#39;hubble&#39;,</span>
+<span class="go"> &#39;name&#39;: &#39;Flight Through the Orion Nebula in Visible Light - Dome Version&#39;,</span>
+<span class="go"> &#39;short_description&#39;: &#39;This visualization flies through the Orion Nebula using visible light, and is formatted for</span>
+<span class="go"> planetarium hemispherical dome projection.&#39;,</span>
+<span class="go"> &#39;video_files&#39;: [{&#39;file_size&#39;: 236467970,</span>
+<span class="go">   &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/video_file/video_attachment/4923/orion_vis-dome_030_preview-1920x1080p60.mp4&#39;,</span>
+<span class="go">   &#39;format&#39;: &#39;MPEG-4&#39;,</span>
+<span class="go">   &#39;frame_rate&#39;: &#39;60.0&#39;,</span>
+<span class="go">   &#39;height&#39;: 1080,</span>
+<span class="go">   &#39;width&#39;: 1920},</span>
+<span class="go">  {&#39;file_size&#39;: 26355690,</span>
+<span class="go">   &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/video_file/video_attachment/4929/orion_vis_dome_030_v5-audio.wav&#39;,</span>
+<span class="go">   &#39;format&#39;: &#39;Other&#39;},</span>
+<span class="go">  {&#39;file_size&#39;: 268725,</span>
+<span class="go">   &#39;file_url&#39;: &#39;https://media.stsci.edu/uploads/video_file/video_attachment/4933/orion_vis-credits-1920x1080.png&#39;,</span>
+<span class="go">   &#39;format&#39;: &#39;Other&#39;}],</span>
+<span class="go"> &#39;youtube_id&#39;: &#39;FVhd-7D4T-M&#39;}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="hubblepy.api.glossary">
+<code class="descclassname">hubblepy.api.</code><code class="descname">glossary</code><span class="sig-paren">(</span><em>page=None</em>, <em>return_type='json'</em><span class="sig-paren">)</span><a class="headerlink" href="#hubblepy.api.glossary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns glossary terms and definitions related to astronomical objects and phenomena.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>page</strong> (<em>list</em><em>, </em><em>tuple</em><em>, </em><em>str</em><em>, </em><em>int</em><em>, or </em><em>None</em>) – The page number of the glossary to return. Can be a list or tuple of ints, a str or int, or None.
+‘all’ returns all pages.</li>
+<li><strong>return_type</strong> (<em>str</em><em>, </em><em>{'json'</em><em>, </em><em>'content'</em><em>, </em><em>'text'}</em>) – Specifies the return type of the results. Defaults to JSON.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">list of dicionaries containing the glossary terms and definitions.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">glossary</span><span class="p">()[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="go">[{&#39;definition&#39;: &#39;A small solar system object composed mostly of rock. Many of these objects orbit the Sun between</span>
+<span class="go">Mars and Jupiter. Their sizes range anywhere from 33 feet (10 meters) in diameter to less than 620 miles (1,000</span>
+<span class="go">kilometers). The largest known asteroid, Ceres, has a diameter of 579 miles (926 kilometers).&#39;,</span>
+<span class="go">  &#39;name&#39;: &#39;Asteroid&#39;},</span>
+<span class="go"> {&#39;definition&#39;: &quot;A region of space containing a huge amount of mass compacted into an extremely small volume. A</span>
+<span class="go"> black hole&#39;s gravitational influence is so strong that nothing, not even light, can escape its grasp. Swirling</span>
+<span class="go"> disks of material — called accretion disks — may surround black holes, and jets of matter may arise from their</span>
+<span class="go"> vicinity.&quot;,</span>
+<span class="go">  &#39;name&#39;: &#39;Black Hole&#39;}]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="hubblepy.api.glossary_term">
+<code class="descclassname">hubblepy.api.</code><code class="descname">glossary_term</code><span class="sig-paren">(</span><em>term</em>, <em>return_type='json'</em><span class="sig-paren">)</span><a class="headerlink" href="#hubblepy.api.glossary_term" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a specific glossary term and its definition.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>term</strong> (<em>list</em><em>, </em><em>tuple</em><em>, or </em><em>str</em>) – List or tuple of str or str representing the glossary term(s) to return.</li>
+<li><strong>return_type</strong> (<em>str</em><em>, </em><em>{'json'</em><em>, </em><em>'content'</em><em>, </em><em>'text'}</em>) – Specifies the return type of the results. Defaults to JSON.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">If only one <code class="code docutils literal notranslate"><span class="pre">term</span></code> is passed, a dictionary containing the term and its definition is returned.
+Otherwise, a list of dictionaries is returned with the same information.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list or dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">glossary_term</span><span class="p">(</span><span class="s1">&#39;asteroid&#39;</span><span class="p">)</span>
+<span class="go">{&#39;definition&#39;: &#39;A small solar system object composed mostly of rock. Many of these objects orbit the Sun between</span>
+<span class="go">Mars and Jupiter. Their sizes range anywhere from 33 feet (10 meters) in diameter to less than 620 miles (1,000</span>
+<span class="go">kilometers). The largest known asteroid, Ceres, has a diameter of 579 miles (926 kilometers).&#39;}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">glossary_term</span><span class="p">([</span><span class="s1">&#39;asteroid&#39;</span><span class="p">,</span> <span class="s1">&#39;planet&#39;</span><span class="p">])</span>
+<span class="go">[{&#39;definition&#39;: &#39;A small solar system object composed mostly of rock. Many of these objects orbit the Sun between</span>
+<span class="go">Mars and Jupiter. Their sizes range anywhere from 33 feet (10 meters) in diameter to less than 620 miles</span>
+<span class="go">(1,000 kilometers). The largest known asteroid, Ceres, has a diameter of 579 miles (926 kilometers).&#39;},</span>
+<span class="go">{&#39;definition&#39;: &#39;An object that orbits a star. Although smaller than stars, planets are relatively large and</span>
+<span class="go">shine only by reflected light. Planets are made up mostly of rock or gas, with a small, solid core. In our solar</span>
+<span class="go">system, the inner planets (Mercury, Venus, Earth, and Mars) are the rocky objects, and the outer planets (Jupiter,</span>
+<span class="go">Saturn, Uranus, and Neptune) are the gaseous ones.&#39;}]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="hubblepy.api.rss">
+<code class="descclassname">hubblepy.api.</code><code class="descname">rss</code><span class="sig-paren">(</span><em>feed_name</em>, <em>page=None</em>, <em>sort='desc'</em>, <em>return_type='json'</em><span class="sig-paren">)</span><a class="headerlink" href="#hubblepy.api.rss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns metadata and other information on published RSS news feeds produced by various international space
+agencies.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>feed_name</strong> (<em>str</em>) – The name of the RSS feed to search</li>
+<li><strong>page</strong> (<em>list</em><em>, </em><em>tuple</em><em>, </em><em>str</em><em>, </em><em>int</em><em>, or </em><em>None</em>) – The page number of the glossary to return. Can be a list or tuple of ints, a str or int, or None.
+‘all’ returns all pages.</li>
+<li><strong>return_type</strong> (<em>str</em><em>, </em><em>{'json'</em><em>, </em><em>'content'</em><em>, </em><em>'text'}</em>) – Specifies the return type of the results. Defaults to JSON.</li>
+<li><strong>sort</strong> (<em>str</em><em>, </em><em>{'desc'</em><em>, </em><em>'asc'}</em>) – Determines the sorting order by publication date of the returned news feed posts. ‘desc’ sorts newer to older,
+and ‘asc’ sorts older to newer.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of news posts metadata including the description, images, link, publication date and more.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">rss</span><span class="p">(</span><span class="s1">&#39;esa_feed&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>
+<span class="go">[{&#39;description&#39;: &#39;The NASA/ESA Hubble Space Telescope has started a new mission to shed light on the evolution of</span>
+<span class="go">the earliest galaxies in the Universe. The BUFFALO survey will observe six massive galaxy clusters and their</span>
+<span class="go">surroundings. The first observations show the galaxy cluster Abell 370 and a host of magnified, gravitationally</span>
+<span class="go">lensed galaxies around it.&#39;,</span>
+<span class="go">  &#39;image&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;image_square&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/square_low_heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;image_square_large&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/square_heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;link&#39;: &#39;http://www.spacetelescope.org/news/heic1816/&#39;,</span>
+<span class="go">  &#39;pub_date&#39;: &#39;2018-09-13T11:00:00.000-04:00&#39;,</span>
+<span class="go">  &#39;thumbnail&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/thumb_low_heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;thumbnail_large&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/thumb_heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;title&#39;: &#39;Photo Release: BUFFALO charges towards the earliest galaxies&#39;}]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="hubblepy.api.rss_posts">
+<code class="descclassname">hubblepy.api.</code><code class="descname">rss_posts</code><span class="sig-paren">(</span><em>feed_name</em>, <em>pub_date</em>, <em>return_type='json'</em><span class="sig-paren">)</span><a class="headerlink" href="#hubblepy.api.rss_posts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns individual RSS news feed posts for various international space agencies and organizations.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>feed_name</strong> (<em>str</em>) – The name of the RSS feed to search</li>
+<li><strong>pub_date</strong> (<em>list</em><em>, </em><em>tuple</em><em>, or </em><em>str</em>) – The publication date of the news feed post formatted as YYYY-MM-DDTHH:MM-SS.NNNN±HH:MM. Can be a list or
+tuple of strings.</li>
+<li><strong>return_type</strong> (<em>str</em><em>, </em><em>{'json'</em><em>, </em><em>'content'</em><em>, </em><em>'text'}</em>) – Specifies the return type of the results. Defaults to JSON.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">If one publication date is passed in the <code class="code docutils literal notranslate"><span class="pre">pub_date</span></code> parameter, a dictionary containing the post
+metadata is returned. Otherwise, a list of dictionaries is returned with the same information for each
+respective post.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict or list</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">rss_posts</span><span class="p">(</span><span class="s1">&#39;esa_feed&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-03-23T13:00:00.000-04:00&#39;</span><span class="p">)</span>
+<span class="go">{&#39;description&#39;: &#39;An international team of astronomers using the NASA/ESA Hubble Space Telescope have uncovered a</span>
+<span class="go">supermassive black hole that has been propelled out of the centre of the distant galaxy 3C186. The black hole was</span>
+<span class="go">most likely ejected by the power of gravitational waves. This is the first time that astronomers found a</span>
+<span class="go">supermassive black hole at such a large distance from its host galaxy centre.&#39;,</span>
+<span class="go"> &#39;guid&#39;: &#39;http://www.spacetelescope.org/news/heic1706/&#39;,</span>
+<span class="go"> &#39;image&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/491/heic1706a.jpg&#39;,</span>
+<span class="go"> &#39;image_square&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_low_heic1706a.jpg&#39;,</span>
+<span class="go"> &#39;image_square_large&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_heic1706a.jpg&#39;,</span>
+<span class="go"> &#39;pub_date&#39;: &#39;2017-03-23T13:00:00.000-04:00&#39;,</span>
+<span class="go"> &#39;thumbnail&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_low_heic1706a.jpg&#39;,</span>
+<span class="go"> &#39;thumbnail_large&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_heic1706a.jpg&#39;,</span>
+<span class="go"> &#39;title&#39;: &#39;Science Release: Hubble detects supermassive black hole kicked out of galactic core&#39;}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hubblepy</span><span class="o">.</span><span class="n">rss_posts</span><span class="p">(</span><span class="s1">&#39;esa_feed&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;2017-03-23T13:00:00.000-04:00&#39;</span><span class="p">,</span> <span class="s1">&#39;2018-09-13T11:00:00.000-04:00&#39;</span><span class="p">])</span>
+<span class="go">[{&#39;description&#39;: &#39;An international team of astronomers using the NASA/ESA Hubble Space Telescope have uncovered a</span>
+<span class="go">supermassive black hole that has been propelled out of the centre of the distant galaxy 3C186. The black hole was</span>
+<span class="go">most likely ejected by the power of gravitational waves. This is the first time that astronomers found a</span>
+<span class="go">supermassive black hole at such a large distance from its host galaxy centre.&#39;,</span>
+<span class="go">  &#39;guid&#39;: &#39;http://www.spacetelescope.org/news/heic1706/&#39;,</span>
+<span class="go">  &#39;image&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/491/heic1706a.jpg&#39;,</span>
+<span class="go">  &#39;image_square&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_low_heic1706a.jpg&#39;,</span>
+<span class="go">  &#39;image_square_large&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/491/square_heic1706a.jpg&#39;,</span>
+<span class="go">  &#39;pub_date&#39;: &#39;2017-03-23T13:00:00.000-04:00&#39;,</span>
+<span class="go">  &#39;thumbnail&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_low_heic1706a.jpg&#39;,</span>
+<span class="go">  &#39;thumbnail_large&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/491/thumb_heic1706a.jpg&#39;,</span>
+<span class="go">  &#39;title&#39;: &#39;Science Release: Hubble detects supermassive black hole kicked out of galactic core&#39;},</span>
+<span class="go"> {&#39;description&#39;: &#39;The NASA/ESA Hubble Space Telescope has started a new mission to shed light on the evolution of</span>
+<span class="go"> the earliest galaxies in the Universe. The BUFFALO survey will observe six massive galaxy clusters and their</span>
+<span class="go"> surroundings. The first observations show the galaxy cluster Abell 370 and a host of magnified, gravitationally</span>
+<span class="go"> lensed galaxies around it.&#39;,</span>
+<span class="go">  &#39;guid&#39;: &#39;http://www.spacetelescope.org/news/heic1816/&#39;,</span>
+<span class="go">  &#39;image&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;image_square&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/square_low_heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;image_square_large&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/square_heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;pub_date&#39;: &#39;2018-09-13T11:00:00.000-04:00&#39;,</span>
+<span class="go">  &#39;thumbnail&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/thumb_low_heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;thumbnail_large&#39;: &#39;https://media.stsci.edu/uploads/feed_post/thumbnail/9629/thumb_heic1816a.jpg&#39;,</span>
+<span class="go">  &#39;title&#39;: &#39;Photo Release: BUFFALO charges towards the earliest galaxies&#39;}]</span>
+</pre></div>
+</div>
+</dd></dl>
+
 </div>
 
 
@@ -91,8 +690,8 @@
   <p class="topless"><a href="index.html"
                         title="previous chapter">Hubblepy - Python API Wrapper of the HubbleSite API</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="generated/hubblepy.api.news.html"
-                        title="next chapter">hubblepy.api.news</a></p>
+  <p class="topless"><a href="versions.html"
+                        title="next chapter">Version History</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -123,7 +722,7 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="generated/hubblepy.api.news.html" title="hubblepy.api.news"
+          <a href="versions.html" title="Version History"
              >next</a> |</li>
         <li class="right" >
           <a href="index.html" title="Hubblepy - Python API Wrapper of the HubbleSite API"
